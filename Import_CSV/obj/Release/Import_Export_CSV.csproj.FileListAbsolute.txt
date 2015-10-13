@@ -1,0 +1,16 @@
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\bin\Release\Import_Export_CSV_v2.7.exe.config
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\bin\Release\Import_Export_CSV_v2.7.exe
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\bin\Release\Import_Export_CSV_v2.7.pdb
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\ResolveAssemblyReference.cache
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormAssociation.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormImportDeMasse.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormInput.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormPrincipale.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.GestionnaireDesTâches.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormRéindexer.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormVeuillezPatienter.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.FormNouveauTampon.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.Properties.Resources.resources
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV.csproj.GenerateResource.Cache
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV_v2.7.exe
+D:\Mes Documents\Dev\ImportExport-2.7\Import_CSV\obj\Release\Import_Export_CSV_v2.7.pdb

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfConfigurationConnexion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationConnexion>
+    <NomConfig>Nouveau</NomConfig>
+    <Host />
+    <Login />
+    <Pass />
+    <Base />
+    <TypeBase>
+      <strValue>Indefini</strValue>
+      <intValue>0</intValue>
+      <enumerationValue>Indefini</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Base Beaudrey 100</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>BEAUDREY_100</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Base Magasin</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>genigraph</Pass>
+    <Base>GESTION_MAGASIN1</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Codasys SAV v10a (Dev)</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>Codasys_SAV_v10a_Dev</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Codasys SAV v10a (Tests)</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>Codasys_SAV_v10a_Tests_Unitaires</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Eric Codasys SAV v10a</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>Eric_Codasys_SAV_v10a_Copie</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Base Test ErM (E)</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>Test_Genigraph_ErM_E</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+  <ConfigurationConnexion>
+    <NomConfig>Base Test ErM (H)</NomConfig>
+    <Host>srv-genigraph</Host>
+    <Login>genigraph</Login>
+    <Pass>10&amp;sea</Pass>
+    <Base>Test_Genigraph_ErM_H</Base>
+    <TypeBase>
+      <strValue>SQLServer</strValue>
+      <intValue>2</intValue>
+      <enumerationValue>SQLServer</enumerationValue>
+    </TypeBase>
+    <Options>
+      <AuthentificationIntegree>false</AuthentificationIntegree>
+      <ConnexionODBC>false</ConnexionODBC>
+    </Options>
+  </ConfigurationConnexion>
+</ArrayOfConfigurationConnexion>
