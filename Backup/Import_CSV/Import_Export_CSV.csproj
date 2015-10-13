@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ED89C5E-6D38-4101-B342-FDA9408D72E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Import_Export_Universel</RootNamespace>
+    <AssemblyName>Import_Export_CSV_XLS_v2.8</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Import_Export_Universel.Program</StartupObject>
+    <ApplicationIcon>vista-102.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBM.Data.Informix, Version=2.81.0.0, Culture=neutral, PublicKeyToken=7c307b91aa13d208" />
+    <Reference Include="Microsoft.Office.Interop.Excel" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssociationChampsBDTampon.cs" />
+    <Compile Include="AssociationTablesBDFichiersImport.cs" />
+    <Compile Include="ConfigurationConnexion.cs" />
+    <Compile Include="ConnexionBD.cs" />
+    <Compile Include="ConnexionInformix.cs" />
+    <Compile Include="ConnexionSQLServer.cs" />
+    <Compile Include="FormAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAssociation.Designer.cs">
+      <DependentUpon>FormAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBEAUDREY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBEAUDREY.Designer.cs">
+      <DependentUpon>FormBEAUDREY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportDeMasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportDeMasse.Designer.cs">
+      <DependentUpon>FormImportDeMasse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInput.Designer.cs">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInput2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInput2.designer.cs">
+      <DependentUpon>FormInput2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipale.Designer.cs">
+      <DependentUpon>FormPrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionnaireDesTâches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionnaireDesTâches.designer.cs">
+      <DependentUpon>GestionnaireDesTâches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRéindexer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRéindexer.Designer.cs">
+      <DependentUpon>FormRéindexer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVeuillezPatienter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVeuillezPatienter.Designer.cs">
+      <DependentUpon>FormVeuillezPatienter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNouveauTampon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNouveauTampon.Designer.cs">
+      <DependentUpon>FormNouveauTampon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionnaireBD.cs" />
+    <Compile Include="GestionnaireCSV.cs" />
+    <Compile Include="GestionnaireExcel.cs" />
+    <Compile Include="ImportExportException.cs" />
+    <Compile Include="InfoTable.cs" />
+    <Compile Include="ItemDeListe.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAssociation.resx">
+      <DependentUpon>FormAssociation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBEAUDREY.resx">
+      <DependentUpon>FormBEAUDREY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportDeMasse.resx">
+      <DependentUpon>FormImportDeMasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInput.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInput2.resx">
+      <DependentUpon>FormInput2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipale.resx">
+      <DependentUpon>FormPrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionnaireDesTâches.resx">
+      <DependentUpon>GestionnaireDesTâches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRéindexer.resx">
+      <DependentUpon>FormRéindexer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVeuillezPatienter.resx">
+      <DependentUpon>FormVeuillezPatienter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNouveauTampon.resx">
+      <DependentUpon>FormNouveauTampon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Import_Export_CSV.cd" />
+    <Content Include="vista-102.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

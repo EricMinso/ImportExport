@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008 Tools for Applications
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Import_Export_CSV", "Import_CSV\Import_Export_CSV.csproj", "{6ED89C5E-6D38-4101-B342-FDA9408D72E1}"
 EndProject
 Global

@@ -1,4 +1,4 @@
-﻿namespace Import_Export_CSV
+﻿namespace Import_Export_Universel
 {
     partial class FormPrincipale
     {
@@ -113,17 +113,18 @@
             this.cbTablesAvecErreur = new System.Windows.Forms.CheckBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dgvColonnes = new System.Windows.Forms.DataGridView();
+            this.btExcel = new System.Windows.Forms.Button();
             this.btOuvrirTable = new System.Windows.Forms.Button();
             this.btInsertTable = new System.Windows.Forms.Button();
             this.btEnregistrerFichier = new System.Windows.Forms.Button();
             this.tbRepertoire = new System.Windows.Forms.TextBox();
-            this.lbRepertoire = new System.Windows.Forms.Label();
-            this.btExecuterRequete = new System.Windows.Forms.Button();
-            this.tbRequete = new System.Windows.Forms.TextBox();
+            this.lbUtiliserCeRépertoire = new System.Windows.Forms.Label();
+            this.btExecuterRequete1 = new System.Windows.Forms.Button();
+            this.tbRequete1 = new System.Windows.Forms.TextBox();
             this.dgvTampon1 = new System.Windows.Forms.DataGridView();
             this.btOuvrirFichierCSV = new System.Windows.Forms.Button();
-            this.openCsvFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.gbFichierCsv = new System.Windows.Forms.GroupBox();
+            this.openCsvXlsFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.gbFichierCSV_XLS = new System.Windows.Forms.GroupBox();
             this.tlpCSV = new System.Windows.Forms.TableLayoutPanel();
             this.flpCSVOptions = new System.Windows.Forms.FlowLayoutPanel();
             this.cbControlerNbColonnes = new System.Windows.Forms.CheckBox();
@@ -135,22 +136,20 @@
             this.btChangerRep = new System.Windows.Forms.Button();
             this.lbNomFichier = new System.Windows.Forms.Label();
             this.tbNomFichierExport = new System.Windows.Forms.TextBox();
-            this.btImporterTouteLaBD = new System.Windows.Forms.Button();
-            this.btExtraireTouteLaBD = new System.Windows.Forms.Button();
             this.gbBD = new System.Windows.Forms.GroupBox();
             this.tlpOptionsBD = new System.Windows.Forms.TableLayoutPanel();
-            this.btInsertionsEchecs = new System.Windows.Forms.Button();
             this.btMontrerGestionnaireDesTâches = new System.Windows.Forms.Button();
+            this.btInsertionsEchecs = new System.Windows.Forms.Button();
             this.btInsertionsSuccès = new System.Windows.Forms.Button();
             this.cbConvertirBinairesEnAsciiHexa = new System.Windows.Forms.CheckBox();
-            this.btSchémaTable = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btCreateTable = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbGénérerScriptSQL = new System.Windows.Forms.CheckBox();
-            this.btEffacerBD = new System.Windows.Forms.Button();
+            this.btSchémaTable = new System.Windows.Forms.Button();
             this.btEffacerTable = new System.Windows.Forms.Button();
-            this.btFichierSQL = new System.Windows.Forms.Button();
+            this.btSelectFromTable = new System.Windows.Forms.Button();
+            this.btFichierSQL1 = new System.Windows.Forms.Button();
             this.btPurger = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openSqlFileDialog = new System.Windows.Forms.OpenFileDialog();
@@ -169,13 +168,19 @@
             this.tbNomConfigurationCourante = new System.Windows.Forms.TextBox();
             this.btEditerFichierConfig = new System.Windows.Forms.Button();
             this.tabPageBD = new System.Windows.Forms.TabPage();
-            this.tabSQL = new System.Windows.Forms.TabPage();
-            this.gbEditeurSQL = new System.Windows.Forms.GroupBox();
-            this.tlpEditeurSQL = new System.Windows.Forms.TableLayoutPanel();
+            this.tabPageFichierCSVXLS = new System.Windows.Forms.TabPage();
+            this.tabMass = new System.Windows.Forms.TabPage();
+            this.lbLabelRépertoire = new System.Windows.Forms.Label();
+            this.lbRépertoire = new System.Windows.Forms.Label();
+            this.btMontrerGestionnaireDesTâches2 = new System.Windows.Forms.Button();
+            this.btEffacerBD = new System.Windows.Forms.Button();
+            this.btImporterTouteLaBD = new System.Windows.Forms.Button();
+            this.btExtraireTouteLaBD = new System.Windows.Forms.Button();
+            this.gbEditeurSQL1 = new System.Windows.Forms.GroupBox();
+            this.tlpEditeurSQL1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.btEffacerRequetes = new System.Windows.Forms.Button();
-            this.cbModèlePrédéfini = new System.Windows.Forms.ComboBox();
-            this.tabPageFichierCSV = new System.Windows.Forms.TabPage();
+            this.btEffacerRequetes1 = new System.Windows.Forms.Button();
+            this.cbModèlePrédéfini1 = new System.Windows.Forms.ComboBox();
             this.tabTampons = new System.Windows.Forms.TabControl();
             this.tabTampon1 = new System.Windows.Forms.TabPage();
             this.tabTampon2 = new System.Windows.Forms.TabPage();
@@ -198,6 +203,28 @@
             this.btRéindexer = new System.Windows.Forms.Button();
             this.btDupliquer = new System.Windows.Forms.Button();
             this.splitContainerPrincipal = new System.Windows.Forms.SplitContainer();
+            this.splitContainerDuPanelHaut = new System.Windows.Forms.SplitContainer();
+            this.tabListeTablesEditeurSQL = new System.Windows.Forms.TabControl();
+            this.tabListeTables = new System.Windows.Forms.TabPage();
+            this.tabSQL1 = new System.Windows.Forms.TabPage();
+            this.tabSQL2 = new System.Windows.Forms.TabPage();
+            this.gbEditeurSQL2 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btExecuterRequete2 = new System.Windows.Forms.Button();
+            this.btEffacerRequetes2 = new System.Windows.Forms.Button();
+            this.cbModèlePrédéfini2 = new System.Windows.Forms.ComboBox();
+            this.btFichierSQL2 = new System.Windows.Forms.Button();
+            this.tbRequete2 = new System.Windows.Forms.TextBox();
+            this.tabSQL3 = new System.Windows.Forms.TabPage();
+            this.gbEditeurSQL3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btExecuterRequete3 = new System.Windows.Forms.Button();
+            this.btEffacerRequetes3 = new System.Windows.Forms.Button();
+            this.cbModèlePrédéfini3 = new System.Windows.Forms.ComboBox();
+            this.btFichierSQL3 = new System.Windows.Forms.Button();
+            this.tbRequete3 = new System.Windows.Forms.TextBox();
             this.tlpGestionnaireLayoutTampons = new System.Windows.Forms.TableLayoutPanel();
             this.tlpGestionnaireBoutonsTampons = new System.Windows.Forms.TableLayoutPanel();
             this.btChercher = new System.Windows.Forms.Button();
@@ -206,8 +233,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btSupprLigne = new System.Windows.Forms.Button();
             this.btSupprColonne = new System.Windows.Forms.Button();
-            this.cbMasquerPanelHaut = new System.Windows.Forms.CheckBox();
+            this.lbTitre = new System.Windows.Forms.Label();
             this.btGC = new System.Windows.Forms.Button();
+            this.rbInterfaceNormale = new System.Windows.Forms.RadioButton();
+            this.rbPleinEcranTampon = new System.Windows.Forms.RadioButton();
+            this.rbPleinEcranTablesBD = new System.Windows.Forms.RadioButton();
+            this.tlpFullMaster = new System.Windows.Forms.TableLayoutPanel();
+            this.saveCsvXlsFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.gbConnexion.SuspendLayout();
             this.tlpConnexion.SuspendLayout();
             this.tlpConnexionLoginPassword.SuspendLayout();
@@ -222,7 +254,7 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvColonnes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTampon1)).BeginInit();
-            this.gbFichierCsv.SuspendLayout();
+            this.gbFichierCSV_XLS.SuspendLayout();
             this.tlpCSV.SuspendLayout();
             this.flpCSVOptions.SuspendLayout();
             this.flpCSVSéparateur.SuspendLayout();
@@ -237,10 +269,10 @@
             this.gbConfigurations.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPageBD.SuspendLayout();
-            this.tabSQL.SuspendLayout();
-            this.gbEditeurSQL.SuspendLayout();
-            this.tlpEditeurSQL.SuspendLayout();
-            this.tabPageFichierCSV.SuspendLayout();
+            this.tabPageFichierCSVXLS.SuspendLayout();
+            this.tabMass.SuspendLayout();
+            this.gbEditeurSQL1.SuspendLayout();
+            this.tlpEditeurSQL1.SuspendLayout();
             this.tabTampons.SuspendLayout();
             this.tabTampon1.SuspendLayout();
             this.tabTampon2.SuspendLayout();
@@ -260,8 +292,21 @@
             this.splitContainerPrincipal.Panel1.SuspendLayout();
             this.splitContainerPrincipal.Panel2.SuspendLayout();
             this.splitContainerPrincipal.SuspendLayout();
+            this.splitContainerDuPanelHaut.Panel1.SuspendLayout();
+            this.splitContainerDuPanelHaut.Panel2.SuspendLayout();
+            this.splitContainerDuPanelHaut.SuspendLayout();
+            this.tabListeTablesEditeurSQL.SuspendLayout();
+            this.tabListeTables.SuspendLayout();
+            this.tabSQL1.SuspendLayout();
+            this.tabSQL2.SuspendLayout();
+            this.gbEditeurSQL2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tabSQL3.SuspendLayout();
+            this.gbEditeurSQL3.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tlpGestionnaireLayoutTampons.SuspendLayout();
             this.tlpGestionnaireBoutonsTampons.SuspendLayout();
+            this.tlpFullMaster.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbLogin
@@ -269,10 +314,10 @@
             this.tbLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLogin.Location = new System.Drawing.Point(71, 39);
+            this.tbLogin.Location = new System.Drawing.Point(76, 39);
             this.tbLogin.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.tbLogin.Name = "tbLogin";
-            this.tbLogin.Size = new System.Drawing.Size(153, 20);
+            this.tbLogin.Size = new System.Drawing.Size(167, 20);
             this.tbLogin.TabIndex = 20;
             this.tbLogin.Text = "root";
             this.tbLogin.TextChanged += new System.EventHandler(this.TextHasChanged);
@@ -285,7 +330,7 @@
             this.labelLogin.Location = new System.Drawing.Point(3, 34);
             this.labelLogin.Margin = new System.Windows.Forms.Padding(3);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(62, 25);
+            this.labelLogin.Size = new System.Drawing.Size(67, 25);
             this.labelLogin.TabIndex = 3;
             this.labelLogin.Text = "Login";
             this.labelLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,7 +343,7 @@
             this.labelPass.Location = new System.Drawing.Point(3, 65);
             this.labelPass.Margin = new System.Windows.Forms.Padding(3);
             this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(62, 25);
+            this.labelPass.Size = new System.Drawing.Size(67, 25);
             this.labelPass.TabIndex = 5;
             this.labelPass.Text = "Pass";
             this.labelPass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -308,10 +353,10 @@
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPass.Location = new System.Drawing.Point(71, 70);
+            this.tbPass.Location = new System.Drawing.Point(76, 70);
             this.tbPass.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(153, 20);
+            this.tbPass.Size = new System.Drawing.Size(167, 20);
             this.tbPass.TabIndex = 30;
             this.tbPass.Text = "root";
             this.tbPass.UseSystemPasswordChar = true;
@@ -325,7 +370,7 @@
             this.labelHost.Location = new System.Drawing.Point(3, 3);
             this.labelHost.Margin = new System.Windows.Forms.Padding(3);
             this.labelHost.Name = "labelHost";
-            this.labelHost.Size = new System.Drawing.Size(62, 25);
+            this.labelHost.Size = new System.Drawing.Size(67, 25);
             this.labelHost.TabIndex = 7;
             this.labelHost.Text = "Host";
             this.labelHost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,10 +380,10 @@
             this.tbHost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHost.Location = new System.Drawing.Point(71, 8);
+            this.tbHost.Location = new System.Drawing.Point(76, 8);
             this.tbHost.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.tbHost.Name = "tbHost";
-            this.tbHost.Size = new System.Drawing.Size(153, 20);
+            this.tbHost.Size = new System.Drawing.Size(167, 20);
             this.tbHost.TabIndex = 10;
             this.tbHost.Text = "localhost";
             this.tbHost.TextChanged += new System.EventHandler(this.TextHasChanged);
@@ -351,7 +396,7 @@
             this.labelBase.Location = new System.Drawing.Point(3, 96);
             this.labelBase.Margin = new System.Windows.Forms.Padding(3);
             this.labelBase.Name = "labelBase";
-            this.labelBase.Size = new System.Drawing.Size(62, 25);
+            this.labelBase.Size = new System.Drawing.Size(67, 25);
             this.labelBase.TabIndex = 9;
             this.labelBase.Text = "Base";
             this.labelBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -367,7 +412,7 @@
             this.gbConnexion.Margin = new System.Windows.Forms.Padding(5);
             this.gbConnexion.Name = "gbConnexion";
             this.gbConnexion.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbConnexion.Size = new System.Drawing.Size(420, 293);
+            this.gbConnexion.Size = new System.Drawing.Size(439, 292);
             this.gbConnexion.TabIndex = 10;
             this.gbConnexion.TabStop = false;
             this.gbConnexion.Text = "Connexion";
@@ -393,7 +438,7 @@
             this.tlpConnexion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpConnexion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpConnexion.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpConnexion.Size = new System.Drawing.Size(390, 260);
+            this.tlpConnexion.Size = new System.Drawing.Size(409, 259);
             this.tlpConnexion.TabIndex = 113;
             // 
             // tlpConnexionLoginPassword
@@ -420,7 +465,7 @@
             this.tlpConnexionLoginPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpConnexionLoginPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpConnexionLoginPassword.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpConnexionLoginPassword.Size = new System.Drawing.Size(227, 161);
+            this.tlpConnexionLoginPassword.Size = new System.Drawing.Size(246, 160);
             this.tlpConnexionLoginPassword.TabIndex = 111;
             // 
             // cbBase
@@ -429,24 +474,24 @@
             this.cbBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBase.FormattingEnabled = true;
-            this.cbBase.Location = new System.Drawing.Point(71, 101);
+            this.cbBase.Location = new System.Drawing.Point(76, 101);
             this.cbBase.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.cbBase.Name = "cbBase";
-            this.cbBase.Size = new System.Drawing.Size(153, 21);
+            this.cbBase.Size = new System.Drawing.Size(167, 21);
             this.cbBase.TabIndex = 40;
             this.cbBase.Text = "master";
             this.cbBase.TextChanged += new System.EventHandler(this.TextHasChanged);
             // 
             // btListerBasesDeDonnées
             // 
-            this.btListerBasesDeDonnées.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btListerBasesDeDonnées.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btListerBasesDeDonnées.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btListerBasesDeDonnées.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btListerBasesDeDonnées.Location = new System.Drawing.Point(71, 135);
+            this.btListerBasesDeDonnées.Location = new System.Drawing.Point(76, 134);
             this.btListerBasesDeDonnées.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.btListerBasesDeDonnées.Name = "btListerBasesDeDonnées";
-            this.btListerBasesDeDonnées.Size = new System.Drawing.Size(153, 23);
+            this.btListerBasesDeDonnées.Size = new System.Drawing.Size(167, 23);
             this.btListerBasesDeDonnées.TabIndex = 41;
             this.btListerBasesDeDonnées.Text = "Lister BD disponibles";
             this.btListerBasesDeDonnées.UseVisualStyleBackColor = true;
@@ -457,7 +502,7 @@
             this.btDeconnexion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btDeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeconnexion.Location = new System.Drawing.Point(255, 225);
+            this.btDeconnexion.Location = new System.Drawing.Point(274, 224);
             this.btDeconnexion.Margin = new System.Windows.Forms.Padding(5);
             this.btDeconnexion.Name = "btDeconnexion";
             this.btDeconnexion.Size = new System.Drawing.Size(130, 30);
@@ -479,7 +524,7 @@
             this.tlpConnexionConfig.Controls.Add(this.cbAuthentificationIntegree, 0, 5);
             this.tlpConnexionConfig.Controls.Add(this.labelOptions, 0, 4);
             this.tlpConnexionConfig.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpConnexionConfig.Location = new System.Drawing.Point(236, 3);
+            this.tlpConnexionConfig.Location = new System.Drawing.Point(255, 3);
             this.tlpConnexionConfig.Name = "tlpConnexionConfig";
             this.tlpConnexionConfig.RowCount = 7;
             this.tlpConnexionConfig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -489,7 +534,7 @@
             this.tlpConnexionConfig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tlpConnexionConfig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tlpConnexionConfig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tlpConnexionConfig.Size = new System.Drawing.Size(151, 161);
+            this.tlpConnexionConfig.Size = new System.Drawing.Size(151, 160);
             this.tlpConnexionConfig.TabIndex = 112;
             // 
             // labelConfig
@@ -540,8 +585,8 @@
             this.cbConnexionODBC.TabIndex = 80;
             this.cbConnexionODBC.Text = "connexion ODBC";
             this.cbConnexionODBC.UseVisualStyleBackColor = true;
-            this.cbConnexionODBC.CheckStateChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
             this.cbConnexionODBC.CheckedChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
+            this.cbConnexionODBC.CheckStateChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
             // 
             // cbTypeBase
             // 
@@ -564,8 +609,8 @@
             this.cbAuthentificationIntegree.TabIndex = 70;
             this.cbAuthentificationIntegree.Text = "authentification intégrée";
             this.cbAuthentificationIntegree.UseVisualStyleBackColor = true;
-            this.cbAuthentificationIntegree.CheckStateChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
             this.cbAuthentificationIntegree.CheckedChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
+            this.cbAuthentificationIntegree.CheckStateChanged += new System.EventHandler(this.CheckBox_ValueHasChanged);
             // 
             // labelOptions
             // 
@@ -584,7 +629,7 @@
             // 
             this.btConnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btConnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConnexion.Location = new System.Drawing.Point(5, 225);
+            this.btConnexion.Location = new System.Drawing.Point(5, 224);
             this.btConnexion.Margin = new System.Windows.Forms.Padding(5);
             this.btConnexion.Name = "btConnexion";
             this.btConnexion.Size = new System.Drawing.Size(130, 30);
@@ -595,15 +640,15 @@
             // 
             // tbConnectionString
             // 
-            this.tbConnectionString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbConnectionString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbConnectionString.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tlpConnexion.SetColumnSpan(this.tbConnectionString, 2);
             this.tbConnectionString.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConnectionString.Location = new System.Drawing.Point(5, 195);
+            this.tbConnectionString.Location = new System.Drawing.Point(5, 194);
             this.tbConnectionString.Margin = new System.Windows.Forms.Padding(5);
             this.tbConnectionString.Name = "tbConnectionString";
-            this.tbConnectionString.Size = new System.Drawing.Size(380, 20);
+            this.tbConnectionString.Size = new System.Drawing.Size(399, 20);
             this.tbConnectionString.TabIndex = 90;
             this.tbConnectionString.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbConnectionString_KeyPress);
             // 
@@ -612,7 +657,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 172);
+            this.label2.Location = new System.Drawing.Point(5, 171);
             this.label2.Margin = new System.Windows.Forms.Padding(5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 13);
@@ -622,13 +667,14 @@
             // 
             // btSupprimerConfig
             // 
-            this.btSupprimerConfig.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btSupprimerConfig.AutoSize = true;
+            this.btSupprimerConfig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btSupprimerConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSupprimerConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSupprimerConfig.Location = new System.Drawing.Point(137, 209);
+            this.btSupprimerConfig.Location = new System.Drawing.Point(141, 208);
             this.btSupprimerConfig.Margin = new System.Windows.Forms.Padding(5);
             this.btSupprimerConfig.Name = "btSupprimerConfig";
-            this.btSupprimerConfig.Size = new System.Drawing.Size(113, 46);
+            this.btSupprimerConfig.Size = new System.Drawing.Size(126, 46);
             this.btSupprimerConfig.TabIndex = 130;
             this.btSupprimerConfig.Text = "Supprimer cette Configuration";
             this.btSupprimerConfig.UseVisualStyleBackColor = true;
@@ -636,12 +682,14 @@
             // 
             // btEnregistrerConfig
             // 
+            this.btEnregistrerConfig.AutoSize = true;
+            this.btEnregistrerConfig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEnregistrerConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEnregistrerConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnregistrerConfig.Location = new System.Drawing.Point(5, 209);
+            this.btEnregistrerConfig.Location = new System.Drawing.Point(5, 208);
             this.btEnregistrerConfig.Margin = new System.Windows.Forms.Padding(5);
             this.btEnregistrerConfig.Name = "btEnregistrerConfig";
-            this.btEnregistrerConfig.Size = new System.Drawing.Size(113, 46);
+            this.btEnregistrerConfig.Size = new System.Drawing.Size(126, 46);
             this.btEnregistrerConfig.TabIndex = 120;
             this.btEnregistrerConfig.Text = "Sauver cette Configuration";
             this.btEnregistrerConfig.UseVisualStyleBackColor = true;
@@ -656,23 +704,21 @@
             this.lbListeTablesVues.Location = new System.Drawing.Point(0, 0);
             this.lbListeTablesVues.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.lbListeTablesVues.Name = "lbListeTablesVues";
-            this.lbListeTablesVues.Size = new System.Drawing.Size(136, 197);
+            this.lbListeTablesVues.Size = new System.Drawing.Size(263, 198);
             this.lbListeTablesVues.TabIndex = 520;
             this.lbListeTablesVues.SelectedIndexChanged += new System.EventHandler(this.lbListeTables_SelectedIndexChanged);
             this.lbListeTablesVues.DoubleClick += new System.EventHandler(this.lbListeTables_DoubleClick);
             // 
             // gbTables
             // 
-            this.gbTables.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.gbTables.Controls.Add(this.tlpListeDesTables);
+            this.gbTables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbTables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTables.Location = new System.Drawing.Point(440, 4);
+            this.gbTables.Location = new System.Drawing.Point(3, 3);
             this.gbTables.Name = "gbTables";
             this.gbTables.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbTables.Size = new System.Drawing.Size(337, 321);
+            this.gbTables.Size = new System.Drawing.Size(637, 292);
             this.gbTables.TabIndex = 13;
             this.gbTables.TabStop = false;
             this.gbTables.Text = "Liste des tables";
@@ -692,7 +738,7 @@
             this.tlpListeDesTables.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpListeDesTables.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpListeDesTables.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpListeDesTables.Size = new System.Drawing.Size(307, 288);
+            this.tlpListeDesTables.Size = new System.Drawing.Size(607, 259);
             this.tlpListeDesTables.TabIndex = 519;
             // 
             // lbNbTables
@@ -700,9 +746,9 @@
             this.lbNbTables.AutoSize = true;
             this.lbNbTables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbNbTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNbTables.Location = new System.Drawing.Point(3, 275);
+            this.lbNbTables.Location = new System.Drawing.Point(3, 246);
             this.lbNbTables.Name = "lbNbTables";
-            this.lbNbTables.Size = new System.Drawing.Size(301, 13);
+            this.lbNbTables.Size = new System.Drawing.Size(601, 13);
             this.lbNbTables.TabIndex = 506;
             this.lbNbTables.Text = "0 table";
             this.lbNbTables.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -721,13 +767,13 @@
             this.flpFiltreDesTables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpFiltreDesTables.Location = new System.Drawing.Point(3, 3);
             this.flpFiltreDesTables.Name = "flpFiltreDesTables";
-            this.flpFiltreDesTables.Size = new System.Drawing.Size(301, 66);
+            this.flpFiltreDesTables.Size = new System.Drawing.Size(601, 36);
             this.flpFiltreDesTables.TabIndex = 505;
             // 
             // btFiltrerListeTables
             // 
-            this.btFiltrerListeTables.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.btFiltrerListeTables.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btFiltrerListeTables.AutoSize = true;
             this.btFiltrerListeTables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btFiltrerListeTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -741,8 +787,8 @@
             // 
             // cbChoixFiltresTablesVues
             // 
-            this.cbChoixFiltresTablesVues.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbChoixFiltresTablesVues.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbChoixFiltresTablesVues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbChoixFiltresTablesVues.FormattingEnabled = true;
             this.cbChoixFiltresTablesVues.Items.AddRange(new object[] {
@@ -756,8 +802,8 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(142, 0);
@@ -769,8 +815,8 @@
             // 
             // cbMinLignes
             // 
-            this.cbMinLignes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbMinLignes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbMinLignes.AutoSize = true;
             this.cbMinLignes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMinLignes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -803,14 +849,14 @@
             // 
             // cbMaxLignes
             // 
-            this.cbMaxLignes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbMaxLignes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbMaxLignes.AutoSize = true;
             this.cbMaxLignes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMaxLignes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMaxLignes.Location = new System.Drawing.Point(3, 39);
+            this.cbMaxLignes.Location = new System.Drawing.Point(293, 3);
             this.cbMaxLignes.Name = "cbMaxLignes";
-            this.cbMaxLignes.Size = new System.Drawing.Size(43, 24);
+            this.cbMaxLignes.Size = new System.Drawing.Size(43, 30);
             this.cbMaxLignes.TabIndex = 508;
             this.cbMaxLignes.Text = "Max";
             this.cbMaxLignes.UseVisualStyleBackColor = true;
@@ -819,7 +865,7 @@
             // nuMaxLignes
             // 
             this.nuMaxLignes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nuMaxLignes.Location = new System.Drawing.Point(52, 43);
+            this.nuMaxLignes.Location = new System.Drawing.Point(342, 7);
             this.nuMaxLignes.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.nuMaxLignes.Maximum = new decimal(new int[] {
             10000,
@@ -837,14 +883,14 @@
             // 
             // cbTablesAvecErreur
             // 
-            this.cbTablesAvecErreur.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbTablesAvecErreur.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbTablesAvecErreur.AutoSize = true;
             this.cbTablesAvecErreur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTablesAvecErreur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTablesAvecErreur.Location = new System.Drawing.Point(113, 39);
+            this.cbTablesAvecErreur.Location = new System.Drawing.Point(403, 3);
             this.cbTablesAvecErreur.Name = "cbTablesAvecErreur";
-            this.cbTablesAvecErreur.Size = new System.Drawing.Size(66, 24);
+            this.cbTablesAvecErreur.Size = new System.Drawing.Size(66, 30);
             this.cbTablesAvecErreur.TabIndex = 509;
             this.cbTablesAvecErreur.Text = "En erreur";
             this.cbTablesAvecErreur.UseVisualStyleBackColor = true;
@@ -852,10 +898,10 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(3, 75);
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.Location = new System.Drawing.Point(3, 45);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -866,8 +912,8 @@
             // 
             this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.splitContainer1.Panel2.Controls.Add(this.dgvColonnes);
-            this.splitContainer1.Size = new System.Drawing.Size(301, 197);
-            this.splitContainer1.SplitterDistance = 136;
+            this.splitContainer1.Size = new System.Drawing.Size(601, 198);
+            this.splitContainer1.SplitterDistance = 263;
             this.splitContainer1.SplitterWidth = 7;
             this.splitContainer1.TabIndex = 518;
             // 
@@ -878,7 +924,6 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvColonnes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvColonnes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvColonnes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvColonnes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvColonnes.Location = new System.Drawing.Point(0, 0);
@@ -892,32 +937,46 @@
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvColonnes.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvColonnes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvColonnes.Size = new System.Drawing.Size(158, 197);
+            this.dgvColonnes.Size = new System.Drawing.Size(331, 198);
             this.dgvColonnes.TabIndex = 530;
+            // 
+            // btExcel
+            // 
+            this.btExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExcel.ForeColor = System.Drawing.Color.Red;
+            this.btExcel.Location = new System.Drawing.Point(470, 3);
+            this.btExcel.Name = "btExcel";
+            this.btExcel.Size = new System.Drawing.Size(136, 38);
+            this.btExcel.TabIndex = 28;
+            this.btExcel.Text = "Import des Dossiers Plans BEAUDREY";
+            this.btExcel.UseVisualStyleBackColor = true;
+            this.btExcel.Click += new System.EventHandler(this.btExcel_Click);
             // 
             // btOuvrirTable
             // 
+            this.tlpOptionsBD.SetColumnSpan(this.btOuvrirTable, 2);
             this.btOuvrirTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btOuvrirTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btOuvrirTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOuvrirTable.Location = new System.Drawing.Point(10, 10);
             this.btOuvrirTable.Margin = new System.Windows.Forms.Padding(10);
             this.btOuvrirTable.Name = "btOuvrirTable";
-            this.btOuvrirTable.Size = new System.Drawing.Size(110, 32);
+            this.btOuvrirTable.Size = new System.Drawing.Size(252, 31);
             this.btOuvrirTable.TabIndex = 150;
-            this.btOuvrirTable.Text = "Ouvrir dans tampon";
+            this.btOuvrirTable.Text = "OUVRIR (copier dans tampon)";
             this.btOuvrirTable.UseVisualStyleBackColor = true;
             this.btOuvrirTable.Click += new System.EventHandler(this.btOuvrirTable_Click);
             // 
             // btInsertTable
             // 
             this.tlpOptionsBD.SetColumnSpan(this.btInsertTable, 3);
+            this.btInsertTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btInsertTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btInsertTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertTable.Location = new System.Drawing.Point(10, 166);
+            this.btInsertTable.Location = new System.Drawing.Point(10, 163);
             this.btInsertTable.Margin = new System.Windows.Forms.Padding(10);
             this.btInsertTable.Name = "btInsertTable";
-            this.btInsertTable.Size = new System.Drawing.Size(370, 32);
+            this.btInsertTable.Size = new System.Drawing.Size(389, 31);
             this.btInsertTable.TabIndex = 160;
             this.btInsertTable.Text = "INSERT / UPDATE / TESTS depuis Tampon";
             this.btInsertTable.UseVisualStyleBackColor = true;
@@ -925,14 +984,16 @@
             // 
             // btEnregistrerFichier
             // 
-            this.btEnregistrerFichier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpCSV.SetColumnSpan(this.btEnregistrerFichier, 2);
+            this.btEnregistrerFichier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEnregistrerFichier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEnregistrerFichier.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnregistrerFichier.Location = new System.Drawing.Point(208, 125);
+            this.btEnregistrerFichier.Location = new System.Drawing.Point(7, 223);
+            this.btEnregistrerFichier.Margin = new System.Windows.Forms.Padding(7);
             this.btEnregistrerFichier.Name = "btEnregistrerFichier";
-            this.btEnregistrerFichier.Size = new System.Drawing.Size(179, 30);
+            this.btEnregistrerFichier.Size = new System.Drawing.Size(395, 29);
             this.btEnregistrerFichier.TabIndex = 250;
-            this.btEnregistrerFichier.Text = "Enregistrer dans fichier CSV";
+            this.btEnregistrerFichier.Text = "Enregistrer tampon dans fichier CSV / XLS";
             this.btEnregistrerFichier.UseVisualStyleBackColor = true;
             this.btEnregistrerFichier.Click += new System.EventHandler(this.btEnregistrerDansFichier_Click);
             // 
@@ -948,47 +1009,47 @@
             this.tbRepertoire.TabIndex = 210;
             this.tbRepertoire.TextChanged += new System.EventHandler(this.tbRepertoire_TextChanged);
             // 
-            // lbRepertoire
+            // lbUtiliserCeRépertoire
             // 
-            this.lbRepertoire.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbRepertoire.AutoSize = true;
-            this.lbRepertoire.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRepertoire.Location = new System.Drawing.Point(3, 3);
-            this.lbRepertoire.Margin = new System.Windows.Forms.Padding(3);
-            this.lbRepertoire.Name = "lbRepertoire";
-            this.lbRepertoire.Size = new System.Drawing.Size(106, 13);
-            this.lbRepertoire.TabIndex = 15;
-            this.lbRepertoire.Text = "Utiliser ce répertoire :";
-            this.lbRepertoire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbUtiliserCeRépertoire.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbUtiliserCeRépertoire.AutoSize = true;
+            this.lbUtiliserCeRépertoire.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUtiliserCeRépertoire.Location = new System.Drawing.Point(3, 3);
+            this.lbUtiliserCeRépertoire.Margin = new System.Windows.Forms.Padding(3);
+            this.lbUtiliserCeRépertoire.Name = "lbUtiliserCeRépertoire";
+            this.lbUtiliserCeRépertoire.Size = new System.Drawing.Size(106, 13);
+            this.lbUtiliserCeRépertoire.TabIndex = 15;
+            this.lbUtiliserCeRépertoire.Text = "Utiliser ce répertoire :";
+            this.lbUtiliserCeRépertoire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btExecuterRequete
+            // btExecuterRequete1
             // 
-            this.btExecuterRequete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btExecuterRequete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btExecuterRequete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExecuterRequete.Location = new System.Drawing.Point(255, 225);
-            this.btExecuterRequete.Margin = new System.Windows.Forms.Padding(5);
-            this.btExecuterRequete.Name = "btExecuterRequete";
-            this.btExecuterRequete.Size = new System.Drawing.Size(130, 30);
-            this.btExecuterRequete.TabIndex = 200;
-            this.btExecuterRequete.Text = "Exécuter requête SQL";
-            this.btExecuterRequete.UseVisualStyleBackColor = true;
-            this.btExecuterRequete.Click += new System.EventHandler(this.btRequete_Click);
+            this.btExecuterRequete1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btExecuterRequete1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExecuterRequete1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExecuterRequete1.Location = new System.Drawing.Point(369, 224);
+            this.btExecuterRequete1.Margin = new System.Windows.Forms.Padding(5);
+            this.btExecuterRequete1.Name = "btExecuterRequete1";
+            this.btExecuterRequete1.Size = new System.Drawing.Size(233, 30);
+            this.btExecuterRequete1.TabIndex = 200;
+            this.btExecuterRequete1.Text = "Exécuter requête SQL";
+            this.btExecuterRequete1.UseVisualStyleBackColor = true;
+            this.btExecuterRequete1.Click += new System.EventHandler(this.btRequete_Click);
             // 
-            // tbRequete
+            // tbRequete1
             // 
-            this.tbRequete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tlpEditeurSQL.SetColumnSpan(this.tbRequete, 3);
-            this.tbRequete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbRequete.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRequete.Location = new System.Drawing.Point(5, 36);
-            this.tbRequete.Margin = new System.Windows.Forms.Padding(5);
-            this.tbRequete.Multiline = true;
-            this.tbRequete.Name = "tbRequete";
-            this.tbRequete.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbRequete.Size = new System.Drawing.Size(380, 179);
-            this.tbRequete.TabIndex = 180;
+            this.tbRequete1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tlpEditeurSQL1.SetColumnSpan(this.tbRequete1, 3);
+            this.tbRequete1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbRequete1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRequete1.Location = new System.Drawing.Point(5, 36);
+            this.tbRequete1.Margin = new System.Windows.Forms.Padding(5);
+            this.tbRequete1.Multiline = true;
+            this.tbRequete1.Name = "tbRequete1";
+            this.tbRequete1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbRequete1.Size = new System.Drawing.Size(597, 178);
+            this.tbRequete1.TabIndex = 180;
             // 
             // dgvTampon1
             // 
@@ -1028,44 +1089,49 @@
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon1.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvTampon1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon1.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon1.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon1.TabIndex = 900;
-            this.dgvTampon1.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             this.dgvTampon1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTampon_ColumnHeaderMouseClick);
+            this.dgvTampon1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
+            this.dgvTampon1.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // btOuvrirFichierCSV
             // 
+            this.tlpCSV.SetColumnSpan(this.btOuvrirFichierCSV, 2);
+            this.btOuvrirFichierCSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btOuvrirFichierCSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btOuvrirFichierCSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btOuvrirFichierCSV.Location = new System.Drawing.Point(3, 125);
+            this.btOuvrirFichierCSV.Location = new System.Drawing.Point(7, 129);
+            this.btOuvrirFichierCSV.Margin = new System.Windows.Forms.Padding(7);
             this.btOuvrirFichierCSV.Name = "btOuvrirFichierCSV";
-            this.btOuvrirFichierCSV.Size = new System.Drawing.Size(179, 30);
+            this.btOuvrirFichierCSV.Size = new System.Drawing.Size(395, 28);
             this.btOuvrirFichierCSV.TabIndex = 240;
-            this.btOuvrirFichierCSV.Text = "Ouvrir CSV dans tampon";
+            this.btOuvrirFichierCSV.Text = "Ouvrir CSV / XLS dans tampon";
             this.btOuvrirFichierCSV.UseVisualStyleBackColor = true;
             this.btOuvrirFichierCSV.Click += new System.EventHandler(this.btOuvrirFichier_Click);
             // 
-            // openCsvFileDialog
+            // openCsvXlsFileDialog
             // 
-            this.openCsvFileDialog.DefaultExt = "*.csv";
-            this.openCsvFileDialog.Filter = "Fichiers CSV|*.csv|Fichiers texte|*.txt|Tous les fichiers|*.*";
+            this.openCsvXlsFileDialog.DefaultExt = "*.csv";
+            this.openCsvXlsFileDialog.Filter = "Fichiers CSV, TXT, XLS|*.csv;*.txt;*.xls;*.xlsx|Tous les fichiers|*.*";
+            this.openCsvXlsFileDialog.SupportMultiDottedExtensions = true;
             // 
-            // gbFichierCsv
+            // gbFichierCSV_XLS
             // 
-            this.gbFichierCsv.AutoSize = true;
-            this.gbFichierCsv.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.gbFichierCsv.Controls.Add(this.tlpCSV);
-            this.gbFichierCsv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbFichierCsv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbFichierCsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbFichierCsv.Location = new System.Drawing.Point(3, 3);
-            this.gbFichierCsv.Margin = new System.Windows.Forms.Padding(7);
-            this.gbFichierCsv.Name = "gbFichierCsv";
-            this.gbFichierCsv.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbFichierCsv.Size = new System.Drawing.Size(420, 293);
-            this.gbFichierCsv.TabIndex = 18;
-            this.gbFichierCsv.TabStop = false;
-            this.gbFichierCsv.Text = "Fichiers CSV";
+            this.gbFichierCSV_XLS.AutoSize = true;
+            this.gbFichierCSV_XLS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gbFichierCSV_XLS.Controls.Add(this.tlpCSV);
+            this.gbFichierCSV_XLS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbFichierCSV_XLS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbFichierCSV_XLS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbFichierCSV_XLS.Location = new System.Drawing.Point(3, 3);
+            this.gbFichierCSV_XLS.Margin = new System.Windows.Forms.Padding(7);
+            this.gbFichierCSV_XLS.Name = "gbFichierCSV_XLS";
+            this.gbFichierCSV_XLS.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
+            this.gbFichierCSV_XLS.Size = new System.Drawing.Size(439, 292);
+            this.gbFichierCSV_XLS.TabIndex = 18;
+            this.gbFichierCSV_XLS.TabStop = false;
+            this.gbFichierCSV_XLS.Text = "Fichiers CSV / XLS";
             // 
             // tlpCSV
             // 
@@ -1075,14 +1141,12 @@
             this.tlpCSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpCSV.Controls.Add(this.flpCSVOptions, 1, 5);
             this.tlpCSV.Controls.Add(this.flpCSVSéparateur, 0, 5);
-            this.tlpCSV.Controls.Add(this.lbRepertoire, 0, 0);
+            this.tlpCSV.Controls.Add(this.lbUtiliserCeRépertoire, 0, 0);
             this.tlpCSV.Controls.Add(this.flpRépertoireCSV, 0, 1);
             this.tlpCSV.Controls.Add(this.lbNomFichier, 0, 2);
             this.tlpCSV.Controls.Add(this.tbNomFichierExport, 0, 3);
             this.tlpCSV.Controls.Add(this.btOuvrirFichierCSV, 0, 4);
-            this.tlpCSV.Controls.Add(this.btEnregistrerFichier, 1, 4);
-            this.tlpCSV.Controls.Add(this.btImporterTouteLaBD, 0, 6);
-            this.tlpCSV.Controls.Add(this.btExtraireTouteLaBD, 1, 6);
+            this.tlpCSV.Controls.Add(this.btEnregistrerFichier, 0, 6);
             this.tlpCSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpCSV.Location = new System.Drawing.Point(15, 18);
             this.tlpCSV.Margin = new System.Windows.Forms.Padding(0);
@@ -1095,7 +1159,7 @@
             this.tlpCSV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpCSV.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpCSV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpCSV.Size = new System.Drawing.Size(390, 260);
+            this.tlpCSV.Size = new System.Drawing.Size(409, 259);
             this.tlpCSV.TabIndex = 301;
             // 
             // flpCSVOptions
@@ -1105,15 +1169,15 @@
             this.flpCSVOptions.Controls.Add(this.cbTrimSpaces);
             this.flpCSVOptions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpCSVOptions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpCSVOptions.Location = new System.Drawing.Point(198, 167);
+            this.flpCSVOptions.Location = new System.Drawing.Point(207, 167);
             this.flpCSVOptions.Name = "flpCSVOptions";
-            this.flpCSVOptions.Size = new System.Drawing.Size(189, 46);
+            this.flpCSVOptions.Size = new System.Drawing.Size(199, 46);
             this.flpCSVOptions.TabIndex = 303;
             // 
             // cbControlerNbColonnes
             // 
-            this.cbControlerNbColonnes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbControlerNbColonnes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbControlerNbColonnes.AutoSize = true;
             this.cbControlerNbColonnes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbControlerNbColonnes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1127,8 +1191,8 @@
             // 
             // cbTrimSpaces
             // 
-            this.cbTrimSpaces.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbTrimSpaces.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbTrimSpaces.AutoSize = true;
             this.cbTrimSpaces.Checked = true;
             this.cbTrimSpaces.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -1150,13 +1214,13 @@
             this.flpCSVSéparateur.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpCSVSéparateur.Location = new System.Drawing.Point(3, 167);
             this.flpCSVSéparateur.Name = "flpCSVSéparateur";
-            this.flpCSVSéparateur.Size = new System.Drawing.Size(189, 26);
+            this.flpCSVSéparateur.Size = new System.Drawing.Size(198, 26);
             this.flpCSVSéparateur.TabIndex = 302;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 3);
@@ -1177,8 +1241,8 @@
             this.tbCaractèreSéparateur.TabIndex = 260;
             this.tbCaractèreSéparateur.Text = "|";
             this.tbCaractèreSéparateur.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbCaractèreSéparateur.TextChanged += new System.EventHandler(this.tbCaractèreSéparateur_TextChanged);
             this.tbCaractèreSéparateur.Click += new System.EventHandler(this.tbCaractèreSéparateur_Click);
+            this.tbCaractèreSéparateur.TextChanged += new System.EventHandler(this.tbCaractèreSéparateur_TextChanged);
             // 
             // flpRépertoireCSV
             // 
@@ -1189,7 +1253,7 @@
             this.flpRépertoireCSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpRépertoireCSV.Location = new System.Drawing.Point(3, 22);
             this.flpRépertoireCSV.Name = "flpRépertoireCSV";
-            this.flpRépertoireCSV.Size = new System.Drawing.Size(384, 36);
+            this.flpRépertoireCSV.Size = new System.Drawing.Size(403, 36);
             this.flpRépertoireCSV.TabIndex = 16;
             // 
             // btChangerRep
@@ -1207,8 +1271,8 @@
             // 
             // lbNomFichier
             // 
-            this.lbNomFichier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbNomFichier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lbNomFichier.AutoSize = true;
             this.lbNomFichier.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNomFichier.Location = new System.Drawing.Point(3, 64);
@@ -1221,45 +1285,15 @@
             // 
             // tbNomFichierExport
             // 
-            this.tbNomFichierExport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbNomFichierExport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbNomFichierExport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tlpCSV.SetColumnSpan(this.tbNomFichierExport, 2);
             this.tbNomFichierExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNomFichierExport.Location = new System.Drawing.Point(3, 83);
             this.tbNomFichierExport.Name = "tbNomFichierExport";
-            this.tbNomFichierExport.Size = new System.Drawing.Size(384, 20);
+            this.tbNomFichierExport.Size = new System.Drawing.Size(403, 20);
             this.tbNomFichierExport.TabIndex = 230;
-            // 
-            // btImporterTouteLaBD
-            // 
-            this.btImporterTouteLaBD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.btImporterTouteLaBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btImporterTouteLaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btImporterTouteLaBD.Location = new System.Drawing.Point(3, 219);
-            this.btImporterTouteLaBD.Name = "btImporterTouteLaBD";
-            this.btImporterTouteLaBD.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btImporterTouteLaBD.Size = new System.Drawing.Size(179, 38);
-            this.btImporterTouteLaBD.TabIndex = 300;
-            this.btImporterTouteLaBD.Text = "     Importer toute la base     depuis des CSV";
-            this.btImporterTouteLaBD.UseVisualStyleBackColor = true;
-            this.btImporterTouteLaBD.Click += new System.EventHandler(this.btImporterTouteLaBD_Click);
-            // 
-            // btExtraireTouteLaBD
-            // 
-            this.btExtraireTouteLaBD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btExtraireTouteLaBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btExtraireTouteLaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExtraireTouteLaBD.Location = new System.Drawing.Point(208, 219);
-            this.btExtraireTouteLaBD.Name = "btExtraireTouteLaBD";
-            this.btExtraireTouteLaBD.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.btExtraireTouteLaBD.Size = new System.Drawing.Size(179, 38);
-            this.btExtraireTouteLaBD.TabIndex = 290;
-            this.btExtraireTouteLaBD.Text = "     Extraire toute la base     dans des CSV";
-            this.btExtraireTouteLaBD.UseVisualStyleBackColor = true;
-            this.btExtraireTouteLaBD.Click += new System.EventHandler(this.btExtraireTouteLaBD_Click);
             // 
             // gbBD
             // 
@@ -1273,7 +1307,7 @@
             this.gbBD.Margin = new System.Windows.Forms.Padding(5);
             this.gbBD.Name = "gbBD";
             this.gbBD.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbBD.Size = new System.Drawing.Size(420, 293);
+            this.gbBD.Size = new System.Drawing.Size(439, 292);
             this.gbBD.TabIndex = 19;
             this.gbBD.TabStop = false;
             this.gbBD.Text = "Base de données";
@@ -1285,16 +1319,16 @@
             this.tlpOptionsBD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpOptionsBD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpOptionsBD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpOptionsBD.Controls.Add(this.btInsertionsEchecs, 1, 4);
             this.tlpOptionsBD.Controls.Add(this.btMontrerGestionnaireDesTâches, 2, 4);
+            this.tlpOptionsBD.Controls.Add(this.btInsertionsEchecs, 1, 4);
             this.tlpOptionsBD.Controls.Add(this.btInsertionsSuccès, 0, 4);
             this.tlpOptionsBD.Controls.Add(this.btInsertTable, 0, 3);
             this.tlpOptionsBD.Controls.Add(this.cbConvertirBinairesEnAsciiHexa, 0, 2);
             this.tlpOptionsBD.Controls.Add(this.btOuvrirTable, 0, 0);
-            this.tlpOptionsBD.Controls.Add(this.btSchémaTable, 1, 0);
-            this.tlpOptionsBD.Controls.Add(this.flowLayoutPanel1, 2, 0);
-            this.tlpOptionsBD.Controls.Add(this.btEffacerBD, 2, 1);
-            this.tlpOptionsBD.Controls.Add(this.btEffacerTable, 1, 1);
+            this.tlpOptionsBD.Controls.Add(this.flowLayoutPanel1, 2, 2);
+            this.tlpOptionsBD.Controls.Add(this.btSchémaTable, 0, 1);
+            this.tlpOptionsBD.Controls.Add(this.btEffacerTable, 2, 1);
+            this.tlpOptionsBD.Controls.Add(this.btSelectFromTable, 1, 1);
             this.tlpOptionsBD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpOptionsBD.Location = new System.Drawing.Point(15, 18);
             this.tlpOptionsBD.Name = "tlpOptionsBD";
@@ -1305,45 +1339,46 @@
             this.tlpOptionsBD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpOptionsBD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpOptionsBD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpOptionsBD.Size = new System.Drawing.Size(390, 260);
+            this.tlpOptionsBD.Size = new System.Drawing.Size(409, 259);
             this.tlpOptionsBD.TabIndex = 176;
-            // 
-            // btInsertionsEchecs
-            // 
-            this.btInsertionsEchecs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btInsertionsEchecs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInsertionsEchecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertionsEchecs.Location = new System.Drawing.Point(140, 218);
-            this.btInsertionsEchecs.Margin = new System.Windows.Forms.Padding(10);
-            this.btInsertionsEchecs.Name = "btInsertionsEchecs";
-            this.btInsertionsEchecs.Size = new System.Drawing.Size(110, 32);
-            this.btInsertionsEchecs.TabIndex = 173;
-            this.btInsertionsEchecs.Text = "Lignes en échecs";
-            this.btInsertionsEchecs.UseVisualStyleBackColor = true;
-            this.btInsertionsEchecs.Click += new System.EventHandler(this.btInsertionsEchecs_Click);
             // 
             // btMontrerGestionnaireDesTâches
             // 
             this.btMontrerGestionnaireDesTâches.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btMontrerGestionnaireDesTâches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btMontrerGestionnaireDesTâches.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMontrerGestionnaireDesTâches.Location = new System.Drawing.Point(270, 218);
+            this.btMontrerGestionnaireDesTâches.Location = new System.Drawing.Point(282, 214);
             this.btMontrerGestionnaireDesTâches.Margin = new System.Windows.Forms.Padding(10);
             this.btMontrerGestionnaireDesTâches.Name = "btMontrerGestionnaireDesTâches";
-            this.btMontrerGestionnaireDesTâches.Size = new System.Drawing.Size(110, 32);
+            this.btMontrerGestionnaireDesTâches.Size = new System.Drawing.Size(117, 35);
             this.btMontrerGestionnaireDesTâches.TabIndex = 177;
             this.btMontrerGestionnaireDesTâches.Text = "Montrer Log";
             this.btMontrerGestionnaireDesTâches.UseVisualStyleBackColor = true;
             this.btMontrerGestionnaireDesTâches.Click += new System.EventHandler(this.btMontrerGestionnaireDesTâches_Click);
             // 
+            // btInsertionsEchecs
+            // 
+            this.btInsertionsEchecs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btInsertionsEchecs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInsertionsEchecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertionsEchecs.Location = new System.Drawing.Point(146, 214);
+            this.btInsertionsEchecs.Margin = new System.Windows.Forms.Padding(10);
+            this.btInsertionsEchecs.Name = "btInsertionsEchecs";
+            this.btInsertionsEchecs.Size = new System.Drawing.Size(116, 35);
+            this.btInsertionsEchecs.TabIndex = 173;
+            this.btInsertionsEchecs.Text = "Lignes en échecs";
+            this.btInsertionsEchecs.UseVisualStyleBackColor = true;
+            this.btInsertionsEchecs.Click += new System.EventHandler(this.btInsertionsEchecs_Click);
+            // 
             // btInsertionsSuccès
             // 
+            this.btInsertionsSuccès.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btInsertionsSuccès.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btInsertionsSuccès.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertionsSuccès.Location = new System.Drawing.Point(10, 218);
+            this.btInsertionsSuccès.Location = new System.Drawing.Point(10, 214);
             this.btInsertionsSuccès.Margin = new System.Windows.Forms.Padding(10);
             this.btInsertionsSuccès.Name = "btInsertionsSuccès";
-            this.btInsertionsSuccès.Size = new System.Drawing.Size(110, 32);
+            this.btInsertionsSuccès.Size = new System.Drawing.Size(116, 35);
             this.btInsertionsSuccès.TabIndex = 172;
             this.btInsertionsSuccès.Text = "Lignes en succès";
             this.btInsertionsSuccès.UseVisualStyleBackColor = true;
@@ -1354,30 +1389,16 @@
             this.cbConvertirBinairesEnAsciiHexa.AutoSize = true;
             this.cbConvertirBinairesEnAsciiHexa.Checked = true;
             this.cbConvertirBinairesEnAsciiHexa.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.tlpOptionsBD.SetColumnSpan(this.cbConvertirBinairesEnAsciiHexa, 3);
+            this.tlpOptionsBD.SetColumnSpan(this.cbConvertirBinairesEnAsciiHexa, 2);
             this.cbConvertirBinairesEnAsciiHexa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbConvertirBinairesEnAsciiHexa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbConvertirBinairesEnAsciiHexa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbConvertirBinairesEnAsciiHexa.Location = new System.Drawing.Point(3, 107);
+            this.cbConvertirBinairesEnAsciiHexa.Location = new System.Drawing.Point(3, 105);
             this.cbConvertirBinairesEnAsciiHexa.Name = "cbConvertirBinairesEnAsciiHexa";
-            this.cbConvertirBinairesEnAsciiHexa.Size = new System.Drawing.Size(384, 46);
+            this.cbConvertirBinairesEnAsciiHexa.Size = new System.Drawing.Size(266, 45);
             this.cbConvertirBinairesEnAsciiHexa.TabIndex = 180;
             this.cbConvertirBinairesEnAsciiHexa.Text = "Convertir champs binaire en ASCII et Hexadécimal";
             this.cbConvertirBinairesEnAsciiHexa.UseVisualStyleBackColor = true;
-            // 
-            // btSchémaTable
-            // 
-            this.btSchémaTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btSchémaTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSchémaTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSchémaTable.Location = new System.Drawing.Point(140, 10);
-            this.btSchémaTable.Margin = new System.Windows.Forms.Padding(10);
-            this.btSchémaTable.Name = "btSchémaTable";
-            this.btSchémaTable.Size = new System.Drawing.Size(110, 32);
-            this.btSchémaTable.TabIndex = 178;
-            this.btSchémaTable.Text = "Schéma Table";
-            this.btSchémaTable.UseVisualStyleBackColor = true;
-            this.btSchémaTable.Click += new System.EventHandler(this.btSchémaTable_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -1385,9 +1406,9 @@
             this.flowLayoutPanel1.Controls.Add(this.btCreateTable);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.cbGénérerScriptSQL);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(263, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(275, 105);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(89, 46);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(89, 45);
             this.flowLayoutPanel1.TabIndex = 176;
             // 
             // btCreateTable
@@ -1423,46 +1444,61 @@
             this.cbGénérerScriptSQL.UseVisualStyleBackColor = true;
             this.cbGénérerScriptSQL.Visible = false;
             // 
-            // btEffacerBD
+            // btSchémaTable
             // 
-            this.btEffacerBD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btEffacerBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEffacerBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEffacerBD.Location = new System.Drawing.Point(270, 62);
-            this.btEffacerBD.Margin = new System.Windows.Forms.Padding(10);
-            this.btEffacerBD.Name = "btEffacerBD";
-            this.btEffacerBD.Size = new System.Drawing.Size(110, 32);
-            this.btEffacerBD.TabIndex = 179;
-            this.btEffacerBD.Text = "Effacer la BD";
-            this.btEffacerBD.UseVisualStyleBackColor = true;
-            this.btEffacerBD.Click += new System.EventHandler(this.btEffacerBD_Click);
+            this.btSchémaTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSchémaTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSchémaTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSchémaTable.Location = new System.Drawing.Point(10, 61);
+            this.btSchémaTable.Margin = new System.Windows.Forms.Padding(10);
+            this.btSchémaTable.Name = "btSchémaTable";
+            this.btSchémaTable.Size = new System.Drawing.Size(116, 31);
+            this.btSchémaTable.TabIndex = 178;
+            this.btSchémaTable.Text = "Schéma Table";
+            this.btSchémaTable.UseVisualStyleBackColor = true;
+            this.btSchémaTable.Click += new System.EventHandler(this.btSchémaTable_Click);
             // 
             // btEffacerTable
             // 
             this.btEffacerTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEffacerTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEffacerTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEffacerTable.Location = new System.Drawing.Point(140, 62);
+            this.btEffacerTable.Location = new System.Drawing.Point(282, 61);
             this.btEffacerTable.Margin = new System.Windows.Forms.Padding(10);
             this.btEffacerTable.Name = "btEffacerTable";
-            this.btEffacerTable.Size = new System.Drawing.Size(110, 32);
+            this.btEffacerTable.Size = new System.Drawing.Size(117, 31);
             this.btEffacerTable.TabIndex = 179;
             this.btEffacerTable.Text = "Effacer la table";
             this.btEffacerTable.UseVisualStyleBackColor = true;
             this.btEffacerTable.Click += new System.EventHandler(this.btEffacerTable_Click);
             // 
-            // btFichierSQL
+            // btSelectFromTable
             // 
-            this.btFichierSQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFichierSQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFichierSQL.Location = new System.Drawing.Point(5, 225);
-            this.btFichierSQL.Margin = new System.Windows.Forms.Padding(5);
-            this.btFichierSQL.Name = "btFichierSQL";
-            this.btFichierSQL.Size = new System.Drawing.Size(107, 30);
-            this.btFichierSQL.TabIndex = 190;
-            this.btFichierSQL.Text = "Ouvrir Fichier SQL";
-            this.btFichierSQL.UseVisualStyleBackColor = true;
-            this.btFichierSQL.Click += new System.EventHandler(this.btFichierSQL_Click);
+            this.btSelectFromTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSelectFromTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSelectFromTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSelectFromTable.Location = new System.Drawing.Point(146, 61);
+            this.btSelectFromTable.Margin = new System.Windows.Forms.Padding(10);
+            this.btSelectFromTable.Name = "btSelectFromTable";
+            this.btSelectFromTable.Size = new System.Drawing.Size(116, 31);
+            this.btSelectFromTable.TabIndex = 181;
+            this.btSelectFromTable.Text = "SELECT ... FROM ";
+            this.btSelectFromTable.UseVisualStyleBackColor = true;
+            this.btSelectFromTable.Click += new System.EventHandler(this.btSelectFromTable_Click);
+            // 
+            // btFichierSQL1
+            // 
+            this.btFichierSQL1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btFichierSQL1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFichierSQL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFichierSQL1.Location = new System.Drawing.Point(5, 224);
+            this.btFichierSQL1.Margin = new System.Windows.Forms.Padding(5);
+            this.btFichierSQL1.Name = "btFichierSQL1";
+            this.btFichierSQL1.Size = new System.Drawing.Size(172, 30);
+            this.btFichierSQL1.TabIndex = 190;
+            this.btFichierSQL1.Text = "Ouvrir Fichier SQL";
+            this.btFichierSQL1.UseVisualStyleBackColor = true;
+            this.btFichierSQL1.Click += new System.EventHandler(this.btFichierSQL_Click);
             // 
             // btPurger
             // 
@@ -1480,15 +1516,15 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tlpGestionnaireBoutonsTampons.SetColumnSpan(this.pictureBox1, 2);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 305);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 1);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 33);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             this.toolTip.SetToolTip(this.pictureBox1, "Développé par Eric MINSO");
@@ -1530,19 +1566,18 @@
             // 
             // tabCommandes
             // 
-            this.tabCommandes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
             this.tabCommandes.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabCommandes.Controls.Add(this.tabPageConnexion);
             this.tabCommandes.Controls.Add(this.tabParamètresConnexion);
             this.tabCommandes.Controls.Add(this.tabPageBD);
-            this.tabCommandes.Controls.Add(this.tabSQL);
-            this.tabCommandes.Controls.Add(this.tabPageFichierCSV);
+            this.tabCommandes.Controls.Add(this.tabPageFichierCSVXLS);
+            this.tabCommandes.Controls.Add(this.tabMass);
+            this.tabCommandes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabCommandes.HotTrack = true;
-            this.tabCommandes.Location = new System.Drawing.Point(4, 4);
+            this.tabCommandes.Location = new System.Drawing.Point(0, 0);
             this.tabCommandes.Name = "tabCommandes";
             this.tabCommandes.SelectedIndex = 0;
-            this.tabCommandes.Size = new System.Drawing.Size(434, 328);
+            this.tabCommandes.Size = new System.Drawing.Size(453, 327);
             this.tabCommandes.TabIndex = 2;
             this.tabCommandes.SelectedIndexChanged += new System.EventHandler(this.tabCommandes_SelectedIndexChanged);
             // 
@@ -1552,7 +1587,7 @@
             this.tabPageConnexion.Location = new System.Drawing.Point(4, 25);
             this.tabPageConnexion.Name = "tabPageConnexion";
             this.tabPageConnexion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConnexion.Size = new System.Drawing.Size(426, 299);
+            this.tabPageConnexion.Size = new System.Drawing.Size(445, 298);
             this.tabPageConnexion.TabIndex = 0;
             this.tabPageConnexion.Text = "Connexion";
             this.tabPageConnexion.UseVisualStyleBackColor = true;
@@ -1563,7 +1598,7 @@
             this.tabParamètresConnexion.Location = new System.Drawing.Point(4, 25);
             this.tabParamètresConnexion.Name = "tabParamètresConnexion";
             this.tabParamètresConnexion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabParamètresConnexion.Size = new System.Drawing.Size(426, 299);
+            this.tabParamètresConnexion.Size = new System.Drawing.Size(445, 298);
             this.tabParamètresConnexion.TabIndex = 4;
             this.tabParamètresConnexion.Text = "Configurations";
             this.tabParamètresConnexion.UseVisualStyleBackColor = true;
@@ -1580,14 +1615,13 @@
             this.gbConfigurations.Margin = new System.Windows.Forms.Padding(5);
             this.gbConfigurations.Name = "gbConfigurations";
             this.gbConfigurations.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbConfigurations.Size = new System.Drawing.Size(420, 293);
+            this.gbConfigurations.Size = new System.Drawing.Size(439, 292);
             this.gbConfigurations.TabIndex = 141;
             this.gbConfigurations.TabStop = false;
             this.gbConfigurations.Text = "Configurations";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
@@ -1610,7 +1644,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(390, 260);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(409, 259);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lbEtatConfigurations
@@ -1626,13 +1660,14 @@
             // 
             // btRéinitConfig
             // 
-            this.btRéinitConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRéinitConfig.AutoSize = true;
+            this.btRéinitConfig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btRéinitConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRéinitConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRéinitConfig.Location = new System.Drawing.Point(272, 209);
+            this.btRéinitConfig.Location = new System.Drawing.Point(277, 208);
             this.btRéinitConfig.Margin = new System.Windows.Forms.Padding(5);
             this.btRéinitConfig.Name = "btRéinitConfig";
-            this.btRéinitConfig.Size = new System.Drawing.Size(113, 46);
+            this.btRéinitConfig.Size = new System.Drawing.Size(127, 46);
             this.btRéinitConfig.TabIndex = 140;
             this.btRéinitConfig.Text = "Réinitialiser toutes les configurations";
             this.btRéinitConfig.UseVisualStyleBackColor = true;
@@ -1643,7 +1678,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
-            this.label4.Location = new System.Drawing.Point(5, 156);
+            this.label4.Location = new System.Drawing.Point(5, 155);
             this.label4.Margin = new System.Windows.Forms.Padding(5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(164, 13);
@@ -1653,24 +1688,24 @@
             // 
             // tbNomConfigurationCourante
             // 
-            this.tbNomConfigurationCourante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbNomConfigurationCourante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbNomConfigurationCourante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.tbNomConfigurationCourante, 3);
-            this.tbNomConfigurationCourante.Location = new System.Drawing.Point(5, 179);
+            this.tbNomConfigurationCourante.Location = new System.Drawing.Point(5, 178);
             this.tbNomConfigurationCourante.Margin = new System.Windows.Forms.Padding(5);
             this.tbNomConfigurationCourante.Name = "tbNomConfigurationCourante";
-            this.tbNomConfigurationCourante.Size = new System.Drawing.Size(380, 20);
+            this.tbNomConfigurationCourante.Size = new System.Drawing.Size(399, 20);
             this.tbNomConfigurationCourante.TabIndex = 142;
             // 
             // btEditerFichierConfig
             // 
             this.btEditerFichierConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btEditerFichierConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEditerFichierConfig.Location = new System.Drawing.Point(272, 28);
+            this.btEditerFichierConfig.Location = new System.Drawing.Point(285, 28);
             this.btEditerFichierConfig.Margin = new System.Windows.Forms.Padding(5);
             this.btEditerFichierConfig.Name = "btEditerFichierConfig";
-            this.btEditerFichierConfig.Size = new System.Drawing.Size(113, 23);
+            this.btEditerFichierConfig.Size = new System.Drawing.Size(119, 31);
             this.btEditerFichierConfig.TabIndex = 143;
             this.btEditerFichierConfig.Text = "Editer Fichier";
             this.btEditerFichierConfig.UseVisualStyleBackColor = true;
@@ -1682,64 +1717,150 @@
             this.tabPageBD.Location = new System.Drawing.Point(4, 25);
             this.tabPageBD.Name = "tabPageBD";
             this.tabPageBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBD.Size = new System.Drawing.Size(426, 299);
+            this.tabPageBD.Size = new System.Drawing.Size(445, 298);
             this.tabPageBD.TabIndex = 1;
             this.tabPageBD.Text = "Base de données";
             this.tabPageBD.UseVisualStyleBackColor = true;
             // 
-            // tabSQL
+            // tabPageFichierCSVXLS
             // 
-            this.tabSQL.Controls.Add(this.gbEditeurSQL);
-            this.tabSQL.Location = new System.Drawing.Point(4, 25);
-            this.tabSQL.Name = "tabSQL";
-            this.tabSQL.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSQL.Size = new System.Drawing.Size(426, 299);
-            this.tabSQL.TabIndex = 3;
-            this.tabSQL.Text = "Editeur SQL";
-            this.tabSQL.UseVisualStyleBackColor = true;
+            this.tabPageFichierCSVXLS.Controls.Add(this.gbFichierCSV_XLS);
+            this.tabPageFichierCSVXLS.Location = new System.Drawing.Point(4, 25);
+            this.tabPageFichierCSVXLS.Name = "tabPageFichierCSVXLS";
+            this.tabPageFichierCSVXLS.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFichierCSVXLS.Size = new System.Drawing.Size(445, 298);
+            this.tabPageFichierCSVXLS.TabIndex = 2;
+            this.tabPageFichierCSVXLS.Text = "Fichiers CSV / XLS";
+            this.tabPageFichierCSVXLS.UseVisualStyleBackColor = true;
             // 
-            // gbEditeurSQL
+            // tabMass
             // 
-            this.gbEditeurSQL.AutoSize = true;
-            this.gbEditeurSQL.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.gbEditeurSQL.Controls.Add(this.tlpEditeurSQL);
-            this.gbEditeurSQL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbEditeurSQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbEditeurSQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbEditeurSQL.Location = new System.Drawing.Point(3, 3);
-            this.gbEditeurSQL.Margin = new System.Windows.Forms.Padding(5);
-            this.gbEditeurSQL.Name = "gbEditeurSQL";
-            this.gbEditeurSQL.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
-            this.gbEditeurSQL.Size = new System.Drawing.Size(420, 293);
-            this.gbEditeurSQL.TabIndex = 201;
-            this.gbEditeurSQL.TabStop = false;
-            this.gbEditeurSQL.Text = "Editeur SQL";
+            this.tabMass.Controls.Add(this.lbLabelRépertoire);
+            this.tabMass.Controls.Add(this.lbRépertoire);
+            this.tabMass.Controls.Add(this.btMontrerGestionnaireDesTâches2);
+            this.tabMass.Controls.Add(this.btEffacerBD);
+            this.tabMass.Controls.Add(this.btImporterTouteLaBD);
+            this.tabMass.Controls.Add(this.btExtraireTouteLaBD);
+            this.tabMass.Location = new System.Drawing.Point(4, 25);
+            this.tabMass.Name = "tabMass";
+            this.tabMass.Size = new System.Drawing.Size(445, 298);
+            this.tabMass.TabIndex = 5;
+            this.tabMass.Text = "En Masse";
+            this.tabMass.UseVisualStyleBackColor = true;
             // 
-            // tlpEditeurSQL
+            // lbLabelRépertoire
             // 
-            this.tlpEditeurSQL.AutoSize = true;
-            this.tlpEditeurSQL.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpEditeurSQL.ColumnCount = 3;
-            this.tlpEditeurSQL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tlpEditeurSQL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tlpEditeurSQL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tlpEditeurSQL.Controls.Add(this.label5, 0, 0);
-            this.tlpEditeurSQL.Controls.Add(this.btExecuterRequete, 2, 2);
-            this.tlpEditeurSQL.Controls.Add(this.btEffacerRequetes, 1, 2);
-            this.tlpEditeurSQL.Controls.Add(this.cbModèlePrédéfini, 1, 0);
-            this.tlpEditeurSQL.Controls.Add(this.btFichierSQL, 0, 2);
-            this.tlpEditeurSQL.Controls.Add(this.tbRequete, 0, 1);
-            this.tlpEditeurSQL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpEditeurSQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tlpEditeurSQL.Location = new System.Drawing.Point(15, 18);
-            this.tlpEditeurSQL.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpEditeurSQL.Name = "tlpEditeurSQL";
-            this.tlpEditeurSQL.RowCount = 3;
-            this.tlpEditeurSQL.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpEditeurSQL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpEditeurSQL.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpEditeurSQL.Size = new System.Drawing.Size(390, 260);
-            this.tlpEditeurSQL.TabIndex = 0;
+            this.lbLabelRépertoire.AutoSize = true;
+            this.lbLabelRépertoire.Location = new System.Drawing.Point(18, 21);
+            this.lbLabelRépertoire.Name = "lbLabelRépertoire";
+            this.lbLabelRépertoire.Size = new System.Drawing.Size(65, 13);
+            this.lbLabelRépertoire.TabIndex = 306;
+            this.lbLabelRépertoire.Text = "Répertoire : ";
+            // 
+            // lbRépertoire
+            // 
+            this.lbRépertoire.AutoSize = true;
+            this.lbRépertoire.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRépertoire.Location = new System.Drawing.Point(89, 21);
+            this.lbRépertoire.Name = "lbRépertoire";
+            this.lbRépertoire.Size = new System.Drawing.Size(70, 13);
+            this.lbRépertoire.TabIndex = 305;
+            this.lbRépertoire.Text = "Répertoire ";
+            // 
+            // btMontrerGestionnaireDesTâches2
+            // 
+            this.btMontrerGestionnaireDesTâches2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMontrerGestionnaireDesTâches2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMontrerGestionnaireDesTâches2.Location = new System.Drawing.Point(21, 214);
+            this.btMontrerGestionnaireDesTâches2.Margin = new System.Windows.Forms.Padding(10);
+            this.btMontrerGestionnaireDesTâches2.Name = "btMontrerGestionnaireDesTâches2";
+            this.btMontrerGestionnaireDesTâches2.Size = new System.Drawing.Size(200, 50);
+            this.btMontrerGestionnaireDesTâches2.TabIndex = 304;
+            this.btMontrerGestionnaireDesTâches2.Text = "Montrer Log";
+            this.btMontrerGestionnaireDesTâches2.UseVisualStyleBackColor = true;
+            this.btMontrerGestionnaireDesTâches2.Click += new System.EventHandler(this.btMontrerGestionnaireDesTâches_Click);
+            // 
+            // btEffacerBD
+            // 
+            this.btEffacerBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEffacerBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEffacerBD.Location = new System.Drawing.Point(21, 159);
+            this.btEffacerBD.Margin = new System.Windows.Forms.Padding(10);
+            this.btEffacerBD.Name = "btEffacerBD";
+            this.btEffacerBD.Size = new System.Drawing.Size(200, 50);
+            this.btEffacerBD.TabIndex = 303;
+            this.btEffacerBD.Text = "Effacer la BD";
+            this.btEffacerBD.UseVisualStyleBackColor = true;
+            this.btEffacerBD.Click += new System.EventHandler(this.btEffacerBD_Click);
+            // 
+            // btImporterTouteLaBD
+            // 
+            this.btImporterTouteLaBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btImporterTouteLaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btImporterTouteLaBD.Location = new System.Drawing.Point(21, 52);
+            this.btImporterTouteLaBD.Name = "btImporterTouteLaBD";
+            this.btImporterTouteLaBD.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btImporterTouteLaBD.Size = new System.Drawing.Size(200, 50);
+            this.btImporterTouteLaBD.TabIndex = 302;
+            this.btImporterTouteLaBD.Text = "Importer toute la base depuis des CSV";
+            this.btImporterTouteLaBD.UseVisualStyleBackColor = true;
+            this.btImporterTouteLaBD.Click += new System.EventHandler(this.btImporterTouteLaBD_Click);
+            // 
+            // btExtraireTouteLaBD
+            // 
+            this.btExtraireTouteLaBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExtraireTouteLaBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExtraireTouteLaBD.Location = new System.Drawing.Point(21, 105);
+            this.btExtraireTouteLaBD.Name = "btExtraireTouteLaBD";
+            this.btExtraireTouteLaBD.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.btExtraireTouteLaBD.Size = new System.Drawing.Size(200, 50);
+            this.btExtraireTouteLaBD.TabIndex = 301;
+            this.btExtraireTouteLaBD.Text = "Extraire toute la base dans des CSV";
+            this.btExtraireTouteLaBD.UseVisualStyleBackColor = true;
+            this.btExtraireTouteLaBD.Click += new System.EventHandler(this.btExtraireTouteLaBD_Click);
+            // 
+            // gbEditeurSQL1
+            // 
+            this.gbEditeurSQL1.AutoSize = true;
+            this.gbEditeurSQL1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gbEditeurSQL1.Controls.Add(this.tlpEditeurSQL1);
+            this.gbEditeurSQL1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbEditeurSQL1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbEditeurSQL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbEditeurSQL1.Location = new System.Drawing.Point(3, 3);
+            this.gbEditeurSQL1.Margin = new System.Windows.Forms.Padding(5);
+            this.gbEditeurSQL1.Name = "gbEditeurSQL1";
+            this.gbEditeurSQL1.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
+            this.gbEditeurSQL1.Size = new System.Drawing.Size(637, 292);
+            this.gbEditeurSQL1.TabIndex = 201;
+            this.gbEditeurSQL1.TabStop = false;
+            this.gbEditeurSQL1.Text = "Editeur SQL 1";
+            // 
+            // tlpEditeurSQL1
+            // 
+            this.tlpEditeurSQL1.AutoSize = true;
+            this.tlpEditeurSQL1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpEditeurSQL1.ColumnCount = 3;
+            this.tlpEditeurSQL1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpEditeurSQL1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpEditeurSQL1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tlpEditeurSQL1.Controls.Add(this.label5, 0, 0);
+            this.tlpEditeurSQL1.Controls.Add(this.btExecuterRequete1, 2, 2);
+            this.tlpEditeurSQL1.Controls.Add(this.btEffacerRequetes1, 1, 2);
+            this.tlpEditeurSQL1.Controls.Add(this.cbModèlePrédéfini1, 1, 0);
+            this.tlpEditeurSQL1.Controls.Add(this.btFichierSQL1, 0, 2);
+            this.tlpEditeurSQL1.Controls.Add(this.tbRequete1, 0, 1);
+            this.tlpEditeurSQL1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpEditeurSQL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tlpEditeurSQL1.Location = new System.Drawing.Point(15, 18);
+            this.tlpEditeurSQL1.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpEditeurSQL1.Name = "tlpEditeurSQL1";
+            this.tlpEditeurSQL1.RowCount = 3;
+            this.tlpEditeurSQL1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpEditeurSQL1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpEditeurSQL1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpEditeurSQL1.Size = new System.Drawing.Size(607, 259);
+            this.tlpEditeurSQL1.TabIndex = 0;
             // 
             // label5
             // 
@@ -1751,24 +1872,26 @@
             this.label5.TabIndex = 53;
             this.label5.Text = "Modèle";
             // 
-            // btEffacerRequetes
+            // btEffacerRequetes1
             // 
-            this.btEffacerRequetes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEffacerRequetes.Location = new System.Drawing.Point(122, 225);
-            this.btEffacerRequetes.Margin = new System.Windows.Forms.Padding(5);
-            this.btEffacerRequetes.Name = "btEffacerRequetes";
-            this.btEffacerRequetes.Size = new System.Drawing.Size(107, 30);
-            this.btEffacerRequetes.TabIndex = 195;
-            this.btEffacerRequetes.Text = "Effacer";
-            this.btEffacerRequetes.UseVisualStyleBackColor = true;
-            this.btEffacerRequetes.Click += new System.EventHandler(this.btEffacerRequetes_Click);
+            this.btEffacerRequetes1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btEffacerRequetes1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEffacerRequetes1.Location = new System.Drawing.Point(187, 224);
+            this.btEffacerRequetes1.Margin = new System.Windows.Forms.Padding(5);
+            this.btEffacerRequetes1.Name = "btEffacerRequetes1";
+            this.btEffacerRequetes1.Size = new System.Drawing.Size(172, 30);
+            this.btEffacerRequetes1.TabIndex = 195;
+            this.btEffacerRequetes1.Text = "Effacer";
+            this.btEffacerRequetes1.UseVisualStyleBackColor = true;
+            this.btEffacerRequetes1.Click += new System.EventHandler(this.btEffacerRequetes_Click);
             // 
-            // cbModèlePrédéfini
+            // cbModèlePrédéfini1
             // 
-            this.tlpEditeurSQL.SetColumnSpan(this.cbModèlePrédéfini, 2);
-            this.cbModèlePrédéfini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbModèlePrédéfini.FormattingEnabled = true;
-            this.cbModèlePrédéfini.Items.AddRange(new object[] {
+            this.tlpEditeurSQL1.SetColumnSpan(this.cbModèlePrédéfini1, 2);
+            this.cbModèlePrédéfini1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbModèlePrédéfini1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbModèlePrédéfini1.FormattingEnabled = true;
+            this.cbModèlePrédéfini1.Items.AddRange(new object[] {
             "SELECT _a_ FROM _t_ WHERE _a_ = 1",
             "INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )",
             "UPDATE _t_ SET _a_ = \'1\', _b_ = \'2\'",
@@ -1777,31 +1900,21 @@
             "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES ORDER BY TABLE_NAME",
             "SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS  WHERE TABLE_NAME L" +
                 "IKE \'%_?_%\'  ORDER BY ORDINAL_POSITION",
-            "SET IDENTITY_INSERT _t_ ON",
+            "SET IDENTITY_INSERT _t_ ON ;  INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )" +
+                " ;  SET IDENTITY_INSERT _t_ OFF ;  ",
             "SELECT tabname FROM systables ORDER BY tabname"});
-            this.cbModèlePrédéfini.Location = new System.Drawing.Point(122, 5);
-            this.cbModèlePrédéfini.Margin = new System.Windows.Forms.Padding(5);
-            this.cbModèlePrédéfini.Name = "cbModèlePrédéfini";
-            this.cbModèlePrédéfini.Size = new System.Drawing.Size(249, 21);
-            this.cbModèlePrédéfini.TabIndex = 170;
-            this.cbModèlePrédéfini.SelectedIndexChanged += new System.EventHandler(this.cbModèlePrédéfini_SelectedIndexChanged);
-            // 
-            // tabPageFichierCSV
-            // 
-            this.tabPageFichierCSV.Controls.Add(this.gbFichierCsv);
-            this.tabPageFichierCSV.Location = new System.Drawing.Point(4, 25);
-            this.tabPageFichierCSV.Name = "tabPageFichierCSV";
-            this.tabPageFichierCSV.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFichierCSV.Size = new System.Drawing.Size(426, 299);
-            this.tabPageFichierCSV.TabIndex = 2;
-            this.tabPageFichierCSV.Text = "Fichiers CSV";
-            this.tabPageFichierCSV.UseVisualStyleBackColor = true;
+            this.cbModèlePrédéfini1.Location = new System.Drawing.Point(187, 5);
+            this.cbModèlePrédéfini1.Margin = new System.Windows.Forms.Padding(5);
+            this.cbModèlePrédéfini1.Name = "cbModèlePrédéfini1";
+            this.cbModèlePrédéfini1.Size = new System.Drawing.Size(415, 21);
+            this.cbModèlePrédéfini1.TabIndex = 170;
+            this.cbModèlePrédéfini1.SelectedIndexChanged += new System.EventHandler(this.cbModèlePrédéfini_SelectedIndexChanged);
             // 
             // tabTampons
             // 
-            this.tabTampons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabTampons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabTampons.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabTampons.Controls.Add(this.tabTampon1);
             this.tabTampons.Controls.Add(this.tabTampon2);
@@ -1816,7 +1929,7 @@
             this.tabTampons.Name = "tabTampons";
             this.tabTampons.Padding = new System.Drawing.Point(12, 4);
             this.tabTampons.SelectedIndex = 0;
-            this.tabTampons.Size = new System.Drawing.Size(583, 284);
+            this.tabTampons.Size = new System.Drawing.Size(908, 341);
             this.tabTampons.TabIndex = 16;
             this.tabTampons.SelectedIndexChanged += new System.EventHandler(this.tabTampons_SelectedIndexChanged);
             // 
@@ -1826,7 +1939,7 @@
             this.tabTampon1.Location = new System.Drawing.Point(4, 27);
             this.tabTampon1.Name = "tabTampon1";
             this.tabTampon1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon1.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon1.Size = new System.Drawing.Size(900, 310);
             this.tabTampon1.TabIndex = 0;
             this.tabTampon1.Text = "Tampon 1";
             this.tabTampon1.UseVisualStyleBackColor = true;
@@ -1837,7 +1950,7 @@
             this.tabTampon2.Location = new System.Drawing.Point(4, 27);
             this.tabTampon2.Name = "tabTampon2";
             this.tabTampon2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon2.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon2.Size = new System.Drawing.Size(900, 310);
             this.tabTampon2.TabIndex = 1;
             this.tabTampon2.Text = "Tampon 2";
             this.tabTampon2.UseVisualStyleBackColor = true;
@@ -1880,8 +1993,9 @@
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon2.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvTampon2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon2.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon2.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon2.TabIndex = 31;
+            this.dgvTampon2.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon2.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon3
@@ -1890,7 +2004,7 @@
             this.tabTampon3.Location = new System.Drawing.Point(4, 27);
             this.tabTampon3.Name = "tabTampon3";
             this.tabTampon3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon3.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon3.Size = new System.Drawing.Size(900, 310);
             this.tabTampon3.TabIndex = 2;
             this.tabTampon3.Text = "Tampon 3";
             this.tabTampon3.UseVisualStyleBackColor = true;
@@ -1933,8 +2047,9 @@
             dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon3.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvTampon3.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon3.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon3.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon3.TabIndex = 32;
+            this.dgvTampon3.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon3.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon4
@@ -1943,7 +2058,7 @@
             this.tabTampon4.Location = new System.Drawing.Point(4, 27);
             this.tabTampon4.Name = "tabTampon4";
             this.tabTampon4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon4.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon4.Size = new System.Drawing.Size(900, 310);
             this.tabTampon4.TabIndex = 3;
             this.tabTampon4.Text = "Tampon 4";
             this.tabTampon4.UseVisualStyleBackColor = true;
@@ -1986,8 +2101,9 @@
             dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon4.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvTampon4.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon4.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon4.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon4.TabIndex = 32;
+            this.dgvTampon4.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon4.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon5
@@ -1996,7 +2112,7 @@
             this.tabTampon5.Location = new System.Drawing.Point(4, 27);
             this.tabTampon5.Name = "tabTampon5";
             this.tabTampon5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon5.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon5.Size = new System.Drawing.Size(900, 310);
             this.tabTampon5.TabIndex = 4;
             this.tabTampon5.Text = "Tampon 5";
             this.tabTampon5.UseVisualStyleBackColor = true;
@@ -2039,8 +2155,9 @@
             dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon5.RowsDefaultCellStyle = dataGridViewCellStyle27;
             this.dgvTampon5.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon5.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon5.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon5.TabIndex = 32;
+            this.dgvTampon5.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon5.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon6
@@ -2049,7 +2166,7 @@
             this.tabTampon6.Location = new System.Drawing.Point(4, 27);
             this.tabTampon6.Name = "tabTampon6";
             this.tabTampon6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon6.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon6.Size = new System.Drawing.Size(900, 310);
             this.tabTampon6.TabIndex = 5;
             this.tabTampon6.Text = "Tampon 6";
             this.tabTampon6.UseVisualStyleBackColor = true;
@@ -2092,8 +2209,9 @@
             dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon6.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.dgvTampon6.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon6.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon6.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon6.TabIndex = 33;
+            this.dgvTampon6.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon6.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon7
@@ -2102,7 +2220,7 @@
             this.tabTampon7.Location = new System.Drawing.Point(4, 27);
             this.tabTampon7.Name = "tabTampon7";
             this.tabTampon7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon7.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon7.Size = new System.Drawing.Size(900, 310);
             this.tabTampon7.TabIndex = 6;
             this.tabTampon7.Text = "Tampon 7";
             this.tabTampon7.UseVisualStyleBackColor = true;
@@ -2145,8 +2263,9 @@
             dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon7.RowsDefaultCellStyle = dataGridViewCellStyle37;
             this.dgvTampon7.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon7.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon7.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon7.TabIndex = 33;
+            this.dgvTampon7.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon7.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // tabTampon8
@@ -2155,7 +2274,7 @@
             this.tabTampon8.Location = new System.Drawing.Point(4, 27);
             this.tabTampon8.Name = "tabTampon8";
             this.tabTampon8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTampon8.Size = new System.Drawing.Size(575, 253);
+            this.tabTampon8.Size = new System.Drawing.Size(900, 310);
             this.tabTampon8.TabIndex = 7;
             this.tabTampon8.Text = "Tampon 8";
             this.tabTampon8.UseVisualStyleBackColor = true;
@@ -2198,8 +2317,9 @@
             dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dgvTampon8.RowsDefaultCellStyle = dataGridViewCellStyle42;
             this.dgvTampon8.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTampon8.Size = new System.Drawing.Size(569, 247);
+            this.dgvTampon8.Size = new System.Drawing.Size(894, 304);
             this.dgvTampon8.TabIndex = 34;
+            this.dgvTampon8.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTampon_RowPostPaint);
             this.dgvTampon8.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dgvTampon_SortCompare);
             // 
             // btToutPurger
@@ -2269,28 +2389,373 @@
             // 
             // splitContainerPrincipal
             // 
-            this.splitContainerPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainerPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpFullMaster.SetColumnSpan(this.splitContainerPrincipal, 7);
             this.splitContainerPrincipal.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainerPrincipal.Location = new System.Drawing.Point(12, 35);
+            this.splitContainerPrincipal.Location = new System.Drawing.Point(3, 47);
             this.splitContainerPrincipal.Name = "splitContainerPrincipal";
             this.splitContainerPrincipal.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainerPrincipal.Panel1
             // 
-            this.splitContainerPrincipal.Panel1.Controls.Add(this.gbTables);
-            this.splitContainerPrincipal.Panel1.Controls.Add(this.tabCommandes);
+            this.splitContainerPrincipal.Panel1.Controls.Add(this.splitContainerDuPanelHaut);
             this.splitContainerPrincipal.Panel1.Margin = new System.Windows.Forms.Padding(1);
             this.splitContainerPrincipal.Panel1.Padding = new System.Windows.Forms.Padding(1);
             // 
             // splitContainerPrincipal.Panel2
             // 
             this.splitContainerPrincipal.Panel2.Controls.Add(this.tlpGestionnaireLayoutTampons);
-            this.splitContainerPrincipal.Size = new System.Drawing.Size(788, 633);
-            this.splitContainerPrincipal.SplitterDistance = 336;
+            this.splitContainerPrincipal.Size = new System.Drawing.Size(1113, 683);
+            this.splitContainerPrincipal.SplitterDistance = 329;
             this.splitContainerPrincipal.SplitterWidth = 7;
             this.splitContainerPrincipal.TabIndex = 26;
+            // 
+            // splitContainerDuPanelHaut
+            // 
+            this.splitContainerDuPanelHaut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerDuPanelHaut.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainerDuPanelHaut.Location = new System.Drawing.Point(1, 1);
+            this.splitContainerDuPanelHaut.Name = "splitContainerDuPanelHaut";
+            // 
+            // splitContainerDuPanelHaut.Panel1
+            // 
+            this.splitContainerDuPanelHaut.Panel1.Controls.Add(this.tabCommandes);
+            // 
+            // splitContainerDuPanelHaut.Panel2
+            // 
+            this.splitContainerDuPanelHaut.Panel2.Controls.Add(this.tabListeTablesEditeurSQL);
+            this.splitContainerDuPanelHaut.Size = new System.Drawing.Size(1111, 327);
+            this.splitContainerDuPanelHaut.SplitterDistance = 453;
+            this.splitContainerDuPanelHaut.SplitterWidth = 7;
+            this.splitContainerDuPanelHaut.TabIndex = 29;
+            // 
+            // tabListeTablesEditeurSQL
+            // 
+            this.tabListeTablesEditeurSQL.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabListeTablesEditeurSQL.Controls.Add(this.tabListeTables);
+            this.tabListeTablesEditeurSQL.Controls.Add(this.tabSQL1);
+            this.tabListeTablesEditeurSQL.Controls.Add(this.tabSQL2);
+            this.tabListeTablesEditeurSQL.Controls.Add(this.tabSQL3);
+            this.tabListeTablesEditeurSQL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabListeTablesEditeurSQL.HotTrack = true;
+            this.tabListeTablesEditeurSQL.Location = new System.Drawing.Point(0, 0);
+            this.tabListeTablesEditeurSQL.Name = "tabListeTablesEditeurSQL";
+            this.tabListeTablesEditeurSQL.SelectedIndex = 0;
+            this.tabListeTablesEditeurSQL.Size = new System.Drawing.Size(651, 327);
+            this.tabListeTablesEditeurSQL.TabIndex = 14;
+            this.tabListeTablesEditeurSQL.SelectedIndexChanged += new System.EventHandler(this.tabListeTablesEditeurSQL_SelectedIndexChanged);
+            // 
+            // tabListeTables
+            // 
+            this.tabListeTables.Controls.Add(this.gbTables);
+            this.tabListeTables.Location = new System.Drawing.Point(4, 25);
+            this.tabListeTables.Name = "tabListeTables";
+            this.tabListeTables.Padding = new System.Windows.Forms.Padding(3);
+            this.tabListeTables.Size = new System.Drawing.Size(643, 298);
+            this.tabListeTables.TabIndex = 0;
+            this.tabListeTables.Text = "Liste des tables";
+            this.tabListeTables.UseVisualStyleBackColor = true;
+            // 
+            // tabSQL1
+            // 
+            this.tabSQL1.Controls.Add(this.gbEditeurSQL1);
+            this.tabSQL1.Location = new System.Drawing.Point(4, 25);
+            this.tabSQL1.Name = "tabSQL1";
+            this.tabSQL1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSQL1.Size = new System.Drawing.Size(643, 298);
+            this.tabSQL1.TabIndex = 1;
+            this.tabSQL1.Text = "Editeur SQL 1";
+            this.tabSQL1.UseVisualStyleBackColor = true;
+            // 
+            // tabSQL2
+            // 
+            this.tabSQL2.Controls.Add(this.gbEditeurSQL2);
+            this.tabSQL2.Location = new System.Drawing.Point(4, 25);
+            this.tabSQL2.Name = "tabSQL2";
+            this.tabSQL2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSQL2.Size = new System.Drawing.Size(643, 298);
+            this.tabSQL2.TabIndex = 2;
+            this.tabSQL2.Text = "Editeur SQL 2";
+            this.tabSQL2.UseVisualStyleBackColor = true;
+            // 
+            // gbEditeurSQL2
+            // 
+            this.gbEditeurSQL2.AutoSize = true;
+            this.gbEditeurSQL2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gbEditeurSQL2.Controls.Add(this.tableLayoutPanel2);
+            this.gbEditeurSQL2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbEditeurSQL2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbEditeurSQL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbEditeurSQL2.Location = new System.Drawing.Point(3, 3);
+            this.gbEditeurSQL2.Margin = new System.Windows.Forms.Padding(5);
+            this.gbEditeurSQL2.Name = "gbEditeurSQL2";
+            this.gbEditeurSQL2.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
+            this.gbEditeurSQL2.Size = new System.Drawing.Size(637, 292);
+            this.gbEditeurSQL2.TabIndex = 202;
+            this.gbEditeurSQL2.TabStop = false;
+            this.gbEditeurSQL2.Text = "Editeur SQL 2";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btExecuterRequete2, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.btEffacerRequetes2, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cbModèlePrédéfini2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btFichierSQL2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.tbRequete2, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 18);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(607, 259);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(5, 5);
+            this.label7.Margin = new System.Windows.Forms.Padding(5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 53;
+            this.label7.Text = "Modèle";
+            // 
+            // btExecuterRequete2
+            // 
+            this.btExecuterRequete2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btExecuterRequete2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExecuterRequete2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExecuterRequete2.Location = new System.Drawing.Point(369, 224);
+            this.btExecuterRequete2.Margin = new System.Windows.Forms.Padding(5);
+            this.btExecuterRequete2.Name = "btExecuterRequete2";
+            this.btExecuterRequete2.Size = new System.Drawing.Size(233, 30);
+            this.btExecuterRequete2.TabIndex = 200;
+            this.btExecuterRequete2.Text = "Exécuter requête SQL";
+            this.btExecuterRequete2.UseVisualStyleBackColor = true;
+            this.btExecuterRequete2.Click += new System.EventHandler(this.btRequete_Click);
+            // 
+            // btEffacerRequetes2
+            // 
+            this.btEffacerRequetes2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btEffacerRequetes2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEffacerRequetes2.Location = new System.Drawing.Point(187, 224);
+            this.btEffacerRequetes2.Margin = new System.Windows.Forms.Padding(5);
+            this.btEffacerRequetes2.Name = "btEffacerRequetes2";
+            this.btEffacerRequetes2.Size = new System.Drawing.Size(172, 30);
+            this.btEffacerRequetes2.TabIndex = 195;
+            this.btEffacerRequetes2.Text = "Effacer";
+            this.btEffacerRequetes2.UseVisualStyleBackColor = true;
+            this.btEffacerRequetes2.Click += new System.EventHandler(this.btEffacerRequetes_Click);
+            // 
+            // cbModèlePrédéfini2
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.cbModèlePrédéfini2, 2);
+            this.cbModèlePrédéfini2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbModèlePrédéfini2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbModèlePrédéfini2.FormattingEnabled = true;
+            this.cbModèlePrédéfini2.Items.AddRange(new object[] {
+            "SELECT _a_ FROM _t_ WHERE _a_ = 1",
+            "INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )",
+            "UPDATE _t_ SET _a_ = \'1\', _b_ = \'2\'",
+            "DELETE FROM _t_ WHERE _a_ = 1",
+            "SELECT _a_, COUNT(_a_)  FROM _t_  GROUP BY _a_ HAVING COUNT(_a_) > 1",
+            "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES ORDER BY TABLE_NAME",
+            "SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS  WHERE TABLE_NAME L" +
+                "IKE \'%_?_%\'  ORDER BY ORDINAL_POSITION",
+            "SET IDENTITY_INSERT _t_ ON ;  INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )" +
+                " ;  SET IDENTITY_INSERT _t_ OFF ;  ",
+            "SELECT tabname FROM systables ORDER BY tabname"});
+            this.cbModèlePrédéfini2.Location = new System.Drawing.Point(187, 5);
+            this.cbModèlePrédéfini2.Margin = new System.Windows.Forms.Padding(5);
+            this.cbModèlePrédéfini2.Name = "cbModèlePrédéfini2";
+            this.cbModèlePrédéfini2.Size = new System.Drawing.Size(415, 21);
+            this.cbModèlePrédéfini2.TabIndex = 170;
+            this.cbModèlePrédéfini2.SelectedIndexChanged += new System.EventHandler(this.cbModèlePrédéfini_SelectedIndexChanged);
+            // 
+            // btFichierSQL2
+            // 
+            this.btFichierSQL2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btFichierSQL2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFichierSQL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFichierSQL2.Location = new System.Drawing.Point(5, 224);
+            this.btFichierSQL2.Margin = new System.Windows.Forms.Padding(5);
+            this.btFichierSQL2.Name = "btFichierSQL2";
+            this.btFichierSQL2.Size = new System.Drawing.Size(172, 30);
+            this.btFichierSQL2.TabIndex = 190;
+            this.btFichierSQL2.Text = "Ouvrir Fichier SQL";
+            this.btFichierSQL2.UseVisualStyleBackColor = true;
+            this.btFichierSQL2.Click += new System.EventHandler(this.btFichierSQL_Click);
+            // 
+            // tbRequete2
+            // 
+            this.tbRequete2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel2.SetColumnSpan(this.tbRequete2, 3);
+            this.tbRequete2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbRequete2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRequete2.Location = new System.Drawing.Point(5, 36);
+            this.tbRequete2.Margin = new System.Windows.Forms.Padding(5);
+            this.tbRequete2.Multiline = true;
+            this.tbRequete2.Name = "tbRequete2";
+            this.tbRequete2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbRequete2.Size = new System.Drawing.Size(597, 178);
+            this.tbRequete2.TabIndex = 180;
+            // 
+            // tabSQL3
+            // 
+            this.tabSQL3.Controls.Add(this.gbEditeurSQL3);
+            this.tabSQL3.Location = new System.Drawing.Point(4, 25);
+            this.tabSQL3.Name = "tabSQL3";
+            this.tabSQL3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSQL3.Size = new System.Drawing.Size(643, 298);
+            this.tabSQL3.TabIndex = 3;
+            this.tabSQL3.Text = "Editeur SQL 3";
+            this.tabSQL3.UseVisualStyleBackColor = true;
+            // 
+            // gbEditeurSQL3
+            // 
+            this.gbEditeurSQL3.AutoSize = true;
+            this.gbEditeurSQL3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gbEditeurSQL3.Controls.Add(this.tableLayoutPanel3);
+            this.gbEditeurSQL3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbEditeurSQL3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbEditeurSQL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbEditeurSQL3.Location = new System.Drawing.Point(3, 3);
+            this.gbEditeurSQL3.Margin = new System.Windows.Forms.Padding(5);
+            this.gbEditeurSQL3.Name = "gbEditeurSQL3";
+            this.gbEditeurSQL3.Padding = new System.Windows.Forms.Padding(15, 5, 15, 15);
+            this.gbEditeurSQL3.Size = new System.Drawing.Size(637, 292);
+            this.gbEditeurSQL3.TabIndex = 202;
+            this.gbEditeurSQL3.TabStop = false;
+            this.gbEditeurSQL3.Text = "Editeur SQL 3";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoSize = true;
+            this.tableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btExecuterRequete3, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btEffacerRequetes3, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.cbModèlePrédéfini3, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btFichierSQL3, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.tbRequete3, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(15, 18);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(607, 259);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 5);
+            this.label8.Margin = new System.Windows.Forms.Padding(5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Modèle";
+            // 
+            // btExecuterRequete3
+            // 
+            this.btExecuterRequete3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btExecuterRequete3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExecuterRequete3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExecuterRequete3.Location = new System.Drawing.Point(369, 224);
+            this.btExecuterRequete3.Margin = new System.Windows.Forms.Padding(5);
+            this.btExecuterRequete3.Name = "btExecuterRequete3";
+            this.btExecuterRequete3.Size = new System.Drawing.Size(233, 30);
+            this.btExecuterRequete3.TabIndex = 200;
+            this.btExecuterRequete3.Text = "Exécuter requête SQL";
+            this.btExecuterRequete3.UseVisualStyleBackColor = true;
+            this.btExecuterRequete3.Click += new System.EventHandler(this.btRequete_Click);
+            // 
+            // btEffacerRequetes3
+            // 
+            this.btEffacerRequetes3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btEffacerRequetes3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEffacerRequetes3.Location = new System.Drawing.Point(187, 224);
+            this.btEffacerRequetes3.Margin = new System.Windows.Forms.Padding(5);
+            this.btEffacerRequetes3.Name = "btEffacerRequetes3";
+            this.btEffacerRequetes3.Size = new System.Drawing.Size(172, 30);
+            this.btEffacerRequetes3.TabIndex = 195;
+            this.btEffacerRequetes3.Text = "Effacer";
+            this.btEffacerRequetes3.UseVisualStyleBackColor = true;
+            this.btEffacerRequetes3.Click += new System.EventHandler(this.btEffacerRequetes_Click);
+            // 
+            // cbModèlePrédéfini3
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.cbModèlePrédéfini3, 2);
+            this.cbModèlePrédéfini3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbModèlePrédéfini3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbModèlePrédéfini3.FormattingEnabled = true;
+            this.cbModèlePrédéfini3.Items.AddRange(new object[] {
+            "SELECT _a_ FROM _t_ WHERE _a_ = 1",
+            "INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )",
+            "UPDATE _t_ SET _a_ = \'1\', _b_ = \'2\'",
+            "DELETE FROM _t_ WHERE _a_ = 1",
+            "SELECT _a_, COUNT(_a_)  FROM _t_  GROUP BY _a_ HAVING COUNT(_a_) > 1",
+            "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES ORDER BY TABLE_NAME",
+            "SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS  WHERE TABLE_NAME L" +
+                "IKE \'%_?_%\'  ORDER BY ORDINAL_POSITION",
+            "SET IDENTITY_INSERT _t_ ON ;  INSERT INTO _t_ ( _a_ , _b_ )  VALUES ( \'1\' , \'2\' )" +
+                " ;  SET IDENTITY_INSERT _t_ OFF ;  ",
+            "SELECT tabname FROM systables ORDER BY tabname"});
+            this.cbModèlePrédéfini3.Location = new System.Drawing.Point(187, 5);
+            this.cbModèlePrédéfini3.Margin = new System.Windows.Forms.Padding(5);
+            this.cbModèlePrédéfini3.Name = "cbModèlePrédéfini3";
+            this.cbModèlePrédéfini3.Size = new System.Drawing.Size(415, 21);
+            this.cbModèlePrédéfini3.TabIndex = 170;
+            this.cbModèlePrédéfini3.SelectedIndexChanged += new System.EventHandler(this.cbModèlePrédéfini_SelectedIndexChanged);
+            // 
+            // btFichierSQL3
+            // 
+            this.btFichierSQL3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btFichierSQL3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFichierSQL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFichierSQL3.Location = new System.Drawing.Point(5, 224);
+            this.btFichierSQL3.Margin = new System.Windows.Forms.Padding(5);
+            this.btFichierSQL3.Name = "btFichierSQL3";
+            this.btFichierSQL3.Size = new System.Drawing.Size(172, 30);
+            this.btFichierSQL3.TabIndex = 190;
+            this.btFichierSQL3.Text = "Ouvrir Fichier SQL";
+            this.btFichierSQL3.UseVisualStyleBackColor = true;
+            this.btFichierSQL3.Click += new System.EventHandler(this.btFichierSQL_Click);
+            // 
+            // tbRequete3
+            // 
+            this.tbRequete3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel3.SetColumnSpan(this.tbRequete3, 3);
+            this.tbRequete3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbRequete3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRequete3.Location = new System.Drawing.Point(5, 36);
+            this.tbRequete3.Margin = new System.Windows.Forms.Padding(5);
+            this.tbRequete3.Multiline = true;
+            this.tbRequete3.Name = "tbRequete3";
+            this.tbRequete3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbRequete3.Size = new System.Drawing.Size(597, 178);
+            this.tbRequete3.TabIndex = 180;
             // 
             // tlpGestionnaireLayoutTampons
             // 
@@ -2305,8 +2770,8 @@
             this.tlpGestionnaireLayoutTampons.Name = "tlpGestionnaireLayoutTampons";
             this.tlpGestionnaireLayoutTampons.RowCount = 1;
             this.tlpGestionnaireLayoutTampons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpGestionnaireLayoutTampons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 290F));
-            this.tlpGestionnaireLayoutTampons.Size = new System.Drawing.Size(788, 290);
+            this.tlpGestionnaireLayoutTampons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 347F));
+            this.tlpGestionnaireLayoutTampons.Size = new System.Drawing.Size(1113, 347);
             this.tlpGestionnaireLayoutTampons.TabIndex = 765;
             // 
             // tlpGestionnaireBoutonsTampons
@@ -2346,7 +2811,7 @@
             this.tlpGestionnaireBoutonsTampons.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpGestionnaireBoutonsTampons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpGestionnaireBoutonsTampons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpGestionnaireBoutonsTampons.Size = new System.Drawing.Size(193, 284);
+            this.tlpGestionnaireBoutonsTampons.Size = new System.Drawing.Size(193, 341);
             this.tlpGestionnaireBoutonsTampons.TabIndex = 764;
             // 
             // btChercher
@@ -2426,25 +2891,23 @@
             this.btSupprColonne.UseVisualStyleBackColor = true;
             this.btSupprColonne.Click += new System.EventHandler(this.btSupprColonne_Click);
             // 
-            // cbMasquerPanelHaut
+            // lbTitre
             // 
-            this.cbMasquerPanelHaut.AutoSize = true;
-            this.cbMasquerPanelHaut.Checked = true;
-            this.cbMasquerPanelHaut.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbMasquerPanelHaut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMasquerPanelHaut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMasquerPanelHaut.Location = new System.Drawing.Point(12, 12);
-            this.cbMasquerPanelHaut.Name = "cbMasquerPanelHaut";
-            this.cbMasquerPanelHaut.Size = new System.Drawing.Size(435, 17);
-            this.cbMasquerPanelHaut.TabIndex = 1;
-            this.cbMasquerPanelHaut.Text = "Bonjour ! J\'importe et j\'exporte des tables SQL Server et Informix en CSV";
-            this.cbMasquerPanelHaut.UseVisualStyleBackColor = true;
-            this.cbMasquerPanelHaut.CheckedChanged += new System.EventHandler(this.cbMasquerPanelHaut_CheckedChanged);
+            this.lbTitre.AutoSize = true;
+            this.lbTitre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbTitre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitre.Location = new System.Drawing.Point(3, 0);
+            this.lbTitre.Name = "lbTitre";
+            this.lbTitre.Size = new System.Drawing.Size(461, 44);
+            this.lbTitre.TabIndex = 1;
+            this.lbTitre.Text = "Bonjour ! J\'importe et j\'exporte des tables SQL Server et Informix en CSV et XLS";
+            this.lbTitre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btGC
             // 
             this.btGC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btGC.Location = new System.Drawing.Point(769, 9);
+            this.btGC.Location = new System.Drawing.Point(1085, 3);
             this.btGC.Name = "btGC";
             this.btGC.Size = new System.Drawing.Size(31, 23);
             this.btGC.TabIndex = 27;
@@ -2452,17 +2915,94 @@
             this.btGC.UseVisualStyleBackColor = true;
             this.btGC.Click += new System.EventHandler(this.btGC_Click);
             // 
+            // rbInterfaceNormale
+            // 
+            this.rbInterfaceNormale.AutoSize = true;
+            this.rbInterfaceNormale.Checked = true;
+            this.rbInterfaceNormale.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbInterfaceNormale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbInterfaceNormale.Location = new System.Drawing.Point(624, 3);
+            this.rbInterfaceNormale.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.rbInterfaceNormale.Name = "rbInterfaceNormale";
+            this.rbInterfaceNormale.Size = new System.Drawing.Size(105, 38);
+            this.rbInterfaceNormale.TabIndex = 29;
+            this.rbInterfaceNormale.TabStop = true;
+            this.rbInterfaceNormale.Text = "Affichage Normal";
+            this.rbInterfaceNormale.UseVisualStyleBackColor = true;
+            this.rbInterfaceNormale.CheckedChanged += new System.EventHandler(this.MasquerPanelsSelonRadioBoxes);
+            // 
+            // rbPleinEcranTampon
+            // 
+            this.rbPleinEcranTampon.AutoSize = true;
+            this.rbPleinEcranTampon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbPleinEcranTampon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbPleinEcranTampon.Location = new System.Drawing.Point(924, 3);
+            this.rbPleinEcranTampon.Name = "rbPleinEcranTampon";
+            this.rbPleinEcranTampon.Size = new System.Drawing.Size(127, 38);
+            this.rbPleinEcranTampon.TabIndex = 30;
+            this.rbPleinEcranTampon.Text = "Tampons de données";
+            this.rbPleinEcranTampon.UseVisualStyleBackColor = true;
+            this.rbPleinEcranTampon.CheckedChanged += new System.EventHandler(this.MasquerPanelsSelonRadioBoxes);
+            // 
+            // rbPleinEcranTablesBD
+            // 
+            this.rbPleinEcranTablesBD.AutoSize = true;
+            this.rbPleinEcranTablesBD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbPleinEcranTablesBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbPleinEcranTablesBD.Location = new System.Drawing.Point(735, 3);
+            this.rbPleinEcranTablesBD.Name = "rbPleinEcranTablesBD";
+            this.rbPleinEcranTablesBD.Size = new System.Drawing.Size(183, 38);
+            this.rbPleinEcranTablesBD.TabIndex = 31;
+            this.rbPleinEcranTablesBD.Text = "Liste des tables BD / Editeur SQL";
+            this.rbPleinEcranTablesBD.UseVisualStyleBackColor = true;
+            this.rbPleinEcranTablesBD.CheckedChanged += new System.EventHandler(this.MasquerPanelsSelonRadioBoxes);
+            // 
+            // tlpFullMaster
+            // 
+            this.tlpFullMaster.AutoSize = true;
+            this.tlpFullMaster.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpFullMaster.ColumnCount = 7;
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpFullMaster.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpFullMaster.Controls.Add(this.splitContainerPrincipal, 0, 1);
+            this.tlpFullMaster.Controls.Add(this.btGC, 6, 0);
+            this.tlpFullMaster.Controls.Add(this.lbTitre, 0, 0);
+            this.tlpFullMaster.Controls.Add(this.rbInterfaceNormale, 2, 0);
+            this.tlpFullMaster.Controls.Add(this.rbPleinEcranTablesBD, 3, 0);
+            this.tlpFullMaster.Controls.Add(this.rbPleinEcranTampon, 4, 0);
+            this.tlpFullMaster.Controls.Add(this.btExcel, 1, 0);
+            this.tlpFullMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpFullMaster.Location = new System.Drawing.Point(10, 10);
+            this.tlpFullMaster.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpFullMaster.Name = "tlpFullMaster";
+            this.tlpFullMaster.RowCount = 2;
+            this.tlpFullMaster.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpFullMaster.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpFullMaster.Size = new System.Drawing.Size(1119, 733);
+            this.tlpFullMaster.TabIndex = 28;
+            // 
+            // saveCsvXlsFileDialog
+            // 
+            this.saveCsvXlsFileDialog.DefaultExt = "*.csv";
+            this.saveCsvXlsFileDialog.Filter = "Fichiers CSV|*.csv|Fichiers XLS|*.xls|Fichiers texte|*.txt|Tous les fichiers|*.*";
+            this.saveCsvXlsFileDialog.SupportMultiDottedExtensions = true;
+            // 
             // FormPrincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 680);
-            this.Controls.Add(this.btGC);
-            this.Controls.Add(this.cbMasquerPanelHaut);
-            this.Controls.Add(this.splitContainerPrincipal);
+            this.ClientSize = new System.Drawing.Size(1139, 753);
+            this.Controls.Add(this.tlpFullMaster);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPrincipale";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Import Export Flash Générique";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipale_FormClosing);
             this.Load += new System.EventHandler(this.FormImport_Load);
             this.gbConnexion.ResumeLayout(false);
             this.gbConnexion.PerformLayout();
@@ -2485,8 +3025,8 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvColonnes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTampon1)).EndInit();
-            this.gbFichierCsv.ResumeLayout(false);
-            this.gbFichierCsv.PerformLayout();
+            this.gbFichierCSV_XLS.ResumeLayout(false);
+            this.gbFichierCSV_XLS.PerformLayout();
             this.tlpCSV.ResumeLayout(false);
             this.tlpCSV.PerformLayout();
             this.flpCSVOptions.ResumeLayout(false);
@@ -2507,19 +3047,18 @@
             this.tabParamètresConnexion.ResumeLayout(false);
             this.tabParamètresConnexion.PerformLayout();
             this.gbConfigurations.ResumeLayout(false);
-            this.gbConfigurations.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabPageBD.ResumeLayout(false);
             this.tabPageBD.PerformLayout();
-            this.tabSQL.ResumeLayout(false);
-            this.tabSQL.PerformLayout();
-            this.gbEditeurSQL.ResumeLayout(false);
-            this.gbEditeurSQL.PerformLayout();
-            this.tlpEditeurSQL.ResumeLayout(false);
-            this.tlpEditeurSQL.PerformLayout();
-            this.tabPageFichierCSV.ResumeLayout(false);
-            this.tabPageFichierCSV.PerformLayout();
+            this.tabPageFichierCSVXLS.ResumeLayout(false);
+            this.tabPageFichierCSVXLS.PerformLayout();
+            this.tabMass.ResumeLayout(false);
+            this.tabMass.PerformLayout();
+            this.gbEditeurSQL1.ResumeLayout(false);
+            this.gbEditeurSQL1.PerformLayout();
+            this.tlpEditeurSQL1.ResumeLayout(false);
+            this.tlpEditeurSQL1.PerformLayout();
             this.tabTampons.ResumeLayout(false);
             this.tabTampon1.ResumeLayout(false);
             this.tabTampon2.ResumeLayout(false);
@@ -2540,10 +3079,31 @@
             this.splitContainerPrincipal.Panel2.ResumeLayout(false);
             this.splitContainerPrincipal.Panel2.PerformLayout();
             this.splitContainerPrincipal.ResumeLayout(false);
+            this.splitContainerDuPanelHaut.Panel1.ResumeLayout(false);
+            this.splitContainerDuPanelHaut.Panel2.ResumeLayout(false);
+            this.splitContainerDuPanelHaut.ResumeLayout(false);
+            this.tabListeTablesEditeurSQL.ResumeLayout(false);
+            this.tabListeTables.ResumeLayout(false);
+            this.tabSQL1.ResumeLayout(false);
+            this.tabSQL1.PerformLayout();
+            this.tabSQL2.ResumeLayout(false);
+            this.tabSQL2.PerformLayout();
+            this.gbEditeurSQL2.ResumeLayout(false);
+            this.gbEditeurSQL2.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tabSQL3.ResumeLayout(false);
+            this.tabSQL3.PerformLayout();
+            this.gbEditeurSQL3.ResumeLayout(false);
+            this.gbEditeurSQL3.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.tlpGestionnaireLayoutTampons.ResumeLayout(false);
             this.tlpGestionnaireLayoutTampons.PerformLayout();
             this.tlpGestionnaireBoutonsTampons.ResumeLayout(false);
             this.tlpGestionnaireBoutonsTampons.PerformLayout();
+            this.tlpFullMaster.ResumeLayout(false);
+            this.tlpFullMaster.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2564,25 +3124,23 @@
         private System.Windows.Forms.GroupBox gbTables;
         private System.Windows.Forms.Button btEnregistrerFichier;
         private System.Windows.Forms.TextBox tbRepertoire;
-        private System.Windows.Forms.Label lbRepertoire;
+        private System.Windows.Forms.Label lbUtiliserCeRépertoire;
         private System.Windows.Forms.DataGridView dgvColonnes;
         private System.Windows.Forms.Button btOuvrirFichierCSV;
-        private System.Windows.Forms.OpenFileDialog openCsvFileDialog;
+        private System.Windows.Forms.OpenFileDialog openCsvXlsFileDialog;
         private System.Windows.Forms.DataGridView dgvTampon1;
         private System.Windows.Forms.Button btInsertTable;
         private System.Windows.Forms.Button btDeconnexion;
         private System.Windows.Forms.Button btOuvrirTable;
-        private System.Windows.Forms.Button btExecuterRequete;
-        private System.Windows.Forms.TextBox tbRequete;
-        private System.Windows.Forms.GroupBox gbFichierCsv;
+        private System.Windows.Forms.Button btExecuterRequete1;
+        private System.Windows.Forms.TextBox tbRequete1;
+        private System.Windows.Forms.GroupBox gbFichierCSV_XLS;
         private System.Windows.Forms.GroupBox gbBD;
         private System.Windows.Forms.Button btPurger;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cbConfig;
-        private System.Windows.Forms.Button btFichierSQL;
+        private System.Windows.Forms.Button btFichierSQL1;
         private System.Windows.Forms.OpenFileDialog openSqlFileDialog;
-        private System.Windows.Forms.Button btImporterTouteLaBD;
-        private System.Windows.Forms.Button btExtraireTouteLaBD;
         public System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Label lbInformation;
         private System.Windows.Forms.Label lbTitreTampon;
@@ -2603,8 +3161,7 @@
         private System.Windows.Forms.TabControl tabTampons;
         private System.Windows.Forms.TabPage tabTampon1;
         private System.Windows.Forms.TabPage tabTampon2;
-        private System.Windows.Forms.TabPage tabPageFichierCSV;
-        private System.Windows.Forms.TabPage tabSQL;
+        private System.Windows.Forms.TabPage tabPageFichierCSVXLS;
         private System.Windows.Forms.TabPage tabTampon3;
         private System.Windows.Forms.Button btToutPurger;
         private System.Windows.Forms.TabPage tabTampon4;
@@ -2629,7 +3186,7 @@
         private System.Windows.Forms.Button btRéinitConfig;
         private System.Windows.Forms.CheckBox cbTrimSpaces;
         private System.Windows.Forms.CheckBox cbControlerNbColonnes;
-        private System.Windows.Forms.ComboBox cbModèlePrédéfini;
+        private System.Windows.Forms.ComboBox cbModèlePrédéfini1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox cbGénérerScriptSQL;
         private System.Windows.Forms.Button btInsertionsEchecs;
@@ -2639,7 +3196,7 @@
         private System.Windows.Forms.RadioButton rbConcaténerTampon;
         private System.Windows.Forms.TableLayoutPanel tlpGestionnaireBoutonsTampons;
         private System.Windows.Forms.TableLayoutPanel tlpGestionnaireLayoutTampons;
-        private System.Windows.Forms.Button btEffacerRequetes;
+        private System.Windows.Forms.Button btEffacerRequetes1;
         private System.Windows.Forms.Button btSupprLigne;
         private System.Windows.Forms.Button btSupprColonne;
         private System.Windows.Forms.CheckBox cbTablesAvecErreur;
@@ -2649,7 +3206,6 @@
         private System.Windows.Forms.CheckBox cbMaxLignes;
         private System.Windows.Forms.Button btFiltrerListeTables;
         private System.Windows.Forms.Label lbNbTables;
-        private System.Windows.Forms.CheckBox cbMasquerPanelHaut;
         private System.Windows.Forms.NumericUpDown nuMinLignes;
         private System.Windows.Forms.NumericUpDown nuMaxLignes;
         private System.Windows.Forms.TableLayoutPanel tlpConnexion;
@@ -2676,17 +3232,53 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbNomConfigurationCourante;
-        private System.Windows.Forms.GroupBox gbEditeurSQL;
-        private System.Windows.Forms.TableLayoutPanel tlpEditeurSQL;
+        private System.Windows.Forms.GroupBox gbEditeurSQL1;
+        private System.Windows.Forms.TableLayoutPanel tlpEditeurSQL1;
         private System.Windows.Forms.Button btMontrerGestionnaireDesTâches;
         private System.Windows.Forms.Button btChercher;
         private System.Windows.Forms.ComboBox cbChoixFiltresTablesVues;
         private System.Windows.Forms.Button btSchémaTable;
         private System.Windows.Forms.Button btEditerFichierConfig;
-        private System.Windows.Forms.Button btEffacerBD;
         private System.Windows.Forms.Button btEffacerTable;
         private System.Windows.Forms.CheckBox cbConvertirBinairesEnAsciiHexa;
         private System.Windows.Forms.Button btGC;
+        private System.Windows.Forms.Button btExcel;
+        private System.Windows.Forms.TabPage tabMass;
+        private System.Windows.Forms.TabControl tabListeTablesEditeurSQL;
+        private System.Windows.Forms.TabPage tabListeTables;
+        private System.Windows.Forms.TabPage tabSQL1;
+        private System.Windows.Forms.RadioButton rbPleinEcranTablesBD;
+        private System.Windows.Forms.RadioButton rbPleinEcranTampon;
+        private System.Windows.Forms.RadioButton rbInterfaceNormale;
+        private System.Windows.Forms.TableLayoutPanel tlpFullMaster;
+        private System.Windows.Forms.Label lbTitre;
+        private System.Windows.Forms.SplitContainer splitContainerDuPanelHaut;
+        private System.Windows.Forms.Button btImporterTouteLaBD;
+        private System.Windows.Forms.Button btExtraireTouteLaBD;
+        private System.Windows.Forms.Button btEffacerBD;
+        private System.Windows.Forms.Button btMontrerGestionnaireDesTâches2;
+        private System.Windows.Forms.Label lbRépertoire;
+        private System.Windows.Forms.Label lbLabelRépertoire;
+        private System.Windows.Forms.Button btSelectFromTable;
+        private System.Windows.Forms.SaveFileDialog saveCsvXlsFileDialog;
+        private System.Windows.Forms.TabPage tabSQL2;
+        private System.Windows.Forms.TabPage tabSQL3;
+        private System.Windows.Forms.GroupBox gbEditeurSQL2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btExecuterRequete2;
+        private System.Windows.Forms.Button btEffacerRequetes2;
+        private System.Windows.Forms.ComboBox cbModèlePrédéfini2;
+        private System.Windows.Forms.Button btFichierSQL2;
+        private System.Windows.Forms.TextBox tbRequete2;
+        private System.Windows.Forms.GroupBox gbEditeurSQL3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btExecuterRequete3;
+        private System.Windows.Forms.Button btEffacerRequetes3;
+        private System.Windows.Forms.ComboBox cbModèlePrédéfini3;
+        private System.Windows.Forms.Button btFichierSQL3;
+        private System.Windows.Forms.TextBox tbRequete3;
     }
 }
 

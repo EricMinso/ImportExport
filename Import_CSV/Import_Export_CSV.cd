@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Import_Export_Universel.FormInput2" Collapsed="False">
+    <Position X="0.5" Y="17.7" Width="1.984772" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.AssociationChampsBDTampon" Collapsed="False">
+    <Position X="0.5" Y="21.5" Width="3.729411" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.AssociationTablesBDFichiersImport" Collapsed="False">
+    <Position X="0.5" Y="26.7" Width="4.173923" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormPrincipale" Collapsed="False">
+    <Position X="0.5" Y="31.2" Width="3.35236" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.ConfigurationConnexion" Collapsed="False">
+    <Position X="0.5" Y="69.7" Width="3.013229" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.ConnexionBD" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="2.821159" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.ConnexionInformix" Collapsed="False">
+    <Position X="0.5" Y="14.1" Width="2.469997" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.ConnexionSQLServer" Collapsed="False">
+    <Position X="3.3" Y="14.1" Width="2.783669" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.GestionnaireDesTâches" Collapsed="False">
+    <Position X="0.5" Y="76.3" Width="3.011725" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormAssociation" Collapsed="False">
+    <Position X="0.5" Y="92.2" Width="3.06506" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.GestionnaireExcel" Collapsed="False">
+    <Position X="0.5" Y="103.1" Width="2.598688" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormRéindexer" Collapsed="False">
+    <Position X="0.5" Y="108.3" Width="2.922673" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormVeuillezPatienter" Collapsed="False">
+    <Position X="0.5" Y="113.6" Width="2.812565" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormImportDeMasse" Collapsed="False">
+    <Position X="0.5" Y="115.9" Width="3.019621" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormNouveauTampon" Collapsed="False">
+    <Position X="0.5" Y="123.2" Width="2.95361" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.FormInput" Collapsed="False">
+    <Position X="0.5" Y="127.1" Width="1.984772" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.GestionnaireBD" Collapsed="False">
+    <Position X="0.5" Y="130.9" Width="3.832536" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.GestionnaireCSV" Collapsed="False">
+    <Position X="0.5" Y="137" Width="2.17942" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.Program" Collapsed="False">
+    <Position X="0.5" Y="140.1" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.Properties.Resources" Collapsed="False">
+    <Position X="0.5" Y="141.5" Width="2.472174" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.ImportExportException" Collapsed="False">
+    <Position X="0.5" Y="143.9" Width="2.871647" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.Properties.Settings" Collapsed="False">
+    <Position X="0.5" Y="146.7" Width="1.828166" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.Settings1" Collapsed="False">
+    <Position X="0.5" Y="148.8" Width="1.828166" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Import_Export_Universel.InfoTable" Collapsed="False">
+    <Position X="0.5" Y="150.8" Width="1.524362" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

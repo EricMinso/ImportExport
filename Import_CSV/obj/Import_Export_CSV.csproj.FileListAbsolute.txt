@@ -1,0 +1,15 @@
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\ResolveAssemblyReference.cache
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormAssociation.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.DossierPlanBeaudrey.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormImportDeMasse.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormInput.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormInput2.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormPrincipale.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.GestionnaireDesTâches.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormRéindexer.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormVeuillezPatienter.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.FormNouveauTampon.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_Universel.Properties.Resources.resources
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_CSV.csproj.GenerateResource.Cache
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_CSV_XLS_v2.8.exe
+D:\Mes Documents\Dev\ImportExport-2.8.x-sharpdevelop\Import_CSV\obj\Debug\Import_Export_CSV_XLS_v2.8.pdb

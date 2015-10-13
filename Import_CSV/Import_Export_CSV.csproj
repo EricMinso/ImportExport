@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -8,11 +8,11 @@
     <ProjectGuid>{6ED89C5E-6D38-4101-B342-FDA9408D72E1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Import_Export_CSV</RootNamespace>
-    <AssemblyName>Import_Export_CSV_v2.7</AssemblyName>
+    <RootNamespace>Import_Export_Universel</RootNamespace>
+    <AssemblyName>Import_Export_CSV_XLS_v2.8</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>Import_Export_CSV.Program</StartupObject>
+    <StartupObject>Import_Export_Universel.Program</StartupObject>
     <ApplicationIcon>vista-102.ico</ApplicationIcon>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -29,6 +29,12 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,21 +55,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IBM.Data.Informix, Version=2.81.0.0, Culture=neutral, PublicKeyToken=7c307b91aa13d208" />
+    <Reference Include="Microsoft.Office.Interop.Excel" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssociationChampsBDTampon.cs" />
@@ -78,6 +85,12 @@
     <Compile Include="FormAssociation.Designer.cs">
       <DependentUpon>FormAssociation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBEAUDREY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBEAUDREY.Designer.cs">
+      <DependentUpon>FormBEAUDREY.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormImportDeMasse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +102,12 @@
     </Compile>
     <Compile Include="FormInput.Designer.cs">
       <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInput2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInput2.designer.cs">
+      <DependentUpon>FormInput2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipale.cs">
       <SubType>Form</SubType>
@@ -122,13 +141,18 @@
     </Compile>
     <Compile Include="GestionnaireBD.cs" />
     <Compile Include="GestionnaireCSV.cs" />
+    <Compile Include="GestionnaireExcel.cs" />
     <Compile Include="ImportExportException.cs" />
     <Compile Include="InfoTable.cs" />
+    <Compile Include="ItemDeListe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAssociation.resx">
       <DependentUpon>FormAssociation.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBEAUDREY.resx">
+      <DependentUpon>FormBEAUDREY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormImportDeMasse.resx">
       <DependentUpon>FormImportDeMasse.cs</DependentUpon>
@@ -136,6 +160,9 @@
     <EmbeddedResource Include="FormInput.resx">
       <DependentUpon>FormInput.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInput2.resx">
+      <DependentUpon>FormInput2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipale.resx">
       <DependentUpon>FormPrincipale.cs</DependentUpon>
@@ -186,6 +213,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Import_Export_CSV.cd" />
     <Content Include="vista-102.ico" />
   </ItemGroup>
   <ItemGroup>
